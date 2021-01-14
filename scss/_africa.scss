@@ -1,0 +1,44 @@
+/*--ARTICULO ETIOPIA--*/
+.etiopia__sec{
+    display: flex;
+    justify-content: center;
+    margin: 15%;
+    article{
+            justify-content: center;
+            background-color: $gris;
+    }
+    img{
+        display: flex;
+        margin: auto;
+        flex-direction: row;
+    }
+}
+
+/*--RESPONSIVE--*/
+
+    /*--Tablet--*/
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        #etiopia {
+        p{
+            font-size: 0.9rem;
+        }
+        img{
+            margin: 5% 5% 5% 5%;
+            width: 95%;
+        }
+    }
+}
+
+    /*--Celular--*/
+    @media (min-width:240px) and (max-width:480px){
+        #etiopia {
+            p{
+                font-size: 0.9rem;
+            }
+            img{
+                margin: 5% 5% 5% 5%;
+                width: 100%;
+            }
+        }   
+    }
+

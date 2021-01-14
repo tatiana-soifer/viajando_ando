@@ -1,0 +1,58 @@
+/*--ARTICULO NYC--*/
+.nyc__sec{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    article{
+        border: solid;
+        border-radius: 5px;
+        justify-content: center;
+        width: 50%;
+        height: 80%;
+        list-style-position: inside;
+        background-color: $gris;
+        img{
+            display: flex;
+            margin: auto;
+            flex-direction: row;
+        }
+        h1{
+            display: flex;
+            text-align: center;
+        }
+        p{
+            margin: 2%;
+        }
+        li{
+            margin: 2%;
+        }
+    }
+}
+
+/*--RESPONSIVE--*/
+
+    /*--Tablet--*/
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        #nyc {
+        p{
+            font-size: 0.9rem;
+        }
+        img{
+            margin: 5% 5% 5% 5%;
+            width: 95%;
+        }
+    }
+}
+
+    /*--Celular--*/
+    @media (min-width:240px) and (max-width:480px){
+        #nyc {
+            p{
+                font-size: 0.9rem;
+            }
+            img{
+                margin: 5% 5% 5% 5%;
+                width: 100%;
+            }
+        }   
+    }

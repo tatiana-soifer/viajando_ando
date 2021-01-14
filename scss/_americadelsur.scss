@@ -1,0 +1,55 @@
+/*--ARTICULO BARILOCHE--*/
+.bariloche__sec{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    article{  
+        border: solid;
+        border-radius: 5px;
+        width: 50%;
+        height: 80%;
+        background-color: $gris;
+        h1{
+            display: flex;
+            margin-left: 15%;
+            flex-direction: row;
+        }
+        p{
+            margin: 2%;
+        }
+        iframe{
+            display: flex;
+            margin: auto;
+            margin-bottom: 4%;
+            flex-direction: row;
+        }
+    }
+}
+
+/*--RESPONSIVE--*/
+
+    /*--Tablet--*/
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        #bariloche {
+        p{
+            font-size: 0.9rem;
+        }
+        img{
+            margin: 5% 5% 5% 5%;
+            width: 95%;
+        }
+    }
+}
+
+    /*--Celular--*/
+    @media (min-width:240px) and (max-width:480px){
+        #bariloche {
+            p{
+                font-size: 0.9rem;
+            }
+            img{
+                margin: 5% 5% 5% 5%;
+                width: 100%;
+            }
+        }   
+    }

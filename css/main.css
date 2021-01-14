@@ -1,0 +1,474 @@
+/*--ARTICULO APPS--*/
+.apps__art {
+  border: none;
+}
+
+.apps__borde {
+  border: 1px solid black;
+  width: 70%;
+  list-style-position: inside;
+  padding: 2%;
+  border-radius: 5px;
+  background-color: #C8C4C1;
+}
+
+.apps__sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: auto;
+  margin-right: 30%;
+}
+
+/*--COLUMNA TOP5--*/
+.top5 {
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top5__sec {
+  border: dashed;
+  padding: 1%;
+  margin: 1%;
+  background-color: #C8C4C1;
+  list-style-position: inside;
+}
+
+.top5__cuidades {
+  color: black;
+}
+
+/*--ARTICULO ETIOPIA--*/
+.etiopia__sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15%;
+}
+
+.etiopia__sec article {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #C8C4C1;
+}
+
+.etiopia__sec img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/*--RESPONSIVE--*/
+/*--Tablet--*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #etiopia p {
+    font-size: 0.9rem;
+  }
+  #etiopia img {
+    margin: 5% 5% 5% 5%;
+    width: 95%;
+  }
+}
+
+/*--Celular--*/
+@media (min-width: 240px) and (max-width: 480px) {
+  #etiopia p {
+    font-size: 0.9rem;
+  }
+  #etiopia img {
+    margin: 5% 5% 5% 5%;
+    width: 100%;
+  }
+}
+
+/*--ARTICULO NYC--*/
+.nyc__sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.nyc__sec article {
+  border: solid;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 80%;
+  list-style-position: inside;
+  background-color: #C8C4C1;
+}
+
+.nyc__sec article img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nyc__sec article h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.nyc__sec article p {
+  margin: 2%;
+}
+
+.nyc__sec article li {
+  margin: 2%;
+}
+
+/*--RESPONSIVE--*/
+/*--Tablet--*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #nyc p {
+    font-size: 0.9rem;
+  }
+  #nyc img {
+    margin: 5% 5% 5% 5%;
+    width: 95%;
+  }
+}
+
+/*--Celular--*/
+@media (min-width: 240px) and (max-width: 480px) {
+  #nyc p {
+    font-size: 0.9rem;
+  }
+  #nyc img {
+    margin: 5% 5% 5% 5%;
+    width: 100%;
+  }
+}
+
+/*--ARTICULO BARILOCHE--*/
+.bariloche__sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.bariloche__sec article {
+  border: solid;
+  border-radius: 5px;
+  width: 50%;
+  height: 80%;
+  background-color: #C8C4C1;
+}
+
+.bariloche__sec article h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.bariloche__sec article p {
+  margin: 2%;
+}
+
+.bariloche__sec article iframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-bottom: 4%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/*--RESPONSIVE--*/
+/*--Tablet--*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #bariloche p {
+    font-size: 0.9rem;
+  }
+  #bariloche img {
+    margin: 5% 5% 5% 5%;
+    width: 95%;
+  }
+}
+
+/*--Celular--*/
+@media (min-width: 240px) and (max-width: 480px) {
+  #bariloche p {
+    font-size: 0.9rem;
+  }
+  #bariloche img {
+    margin: 5% 5% 5% 5%;
+    width: 100%;
+  }
+}
+
+/*--EUROPA--*/
+#europa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+/*--ARTICULO PARIS--*/
+.paris__sec {
+  margin: 5%;
+  margin-right: -15%;
+}
+
+.paris__sec article {
+  border: solid;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #C8C4C1;
+  list-style-position: inside;
+  margin: 2%;
+}
+
+.paris__sec article li {
+  margin: 1%;
+}
+
+.paris__sec article p {
+  margin: 1%;
+}
+
+.paris__sec article img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1%;
+  margin-left: 40%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.paris__sec article h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/*--ARTICULO ROMA--*/
+.roma__sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.roma__sec article {
+  border: solid;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #C8C4C1;
+  list-style-position: inside;
+  width: auto;
+  height: 60%;
+}
+
+.roma__sec article li {
+  margin-left: 2%;
+}
+
+.roma__sec article h2 {
+  margin: 5%;
+}
+
+.roma__sec article p {
+  margin-left: 2%;
+}
+
+.formulario {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid;
+  margin: 20%;
+  padding: 1%;
+  border-radius: 5px;
+  background-color: #C8C4C1;
+}
+
+/*--BODY--*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: 'Sansita', sans-serif;
+  background-image: url("../img/mapamundi.jpg");
+}
+
+#body {
+  margin-top: 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6;
+  color: black;
+}
+
+h1 {
+  color: black;
+}
+
+/*--HEADER--*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#menu {
+  height: 5rem;
+  padding-top: .5rem;
+}
+
+.logo {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*--REDES SOCIALES--*/
+.social {
+  background-color: #353A40;
+}
+
+.social .social__copy {
+  padding: 1%;
+}
+
+.social img {
+  margin: 15%;
+  padding: 25%;
+}
+
+/*--RESPONSIVE--*/
+/*--Tablet--*/
+@media (max-width: 768px) {
+  .social img {
+    margin: 2%;
+    padding: 2%;
+  }
+  #body {
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 1024PX;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+/*--Celular--*/
+@media (min-width: 240px) and (max-width: 480px) {
+  .social img {
+    margin: 1%;
+    padding: 1%;
+    height: 20px;
+    width: 20px;
+  }
+  .social__copy {
+    text-align: center;
+  }
+  .social__copy p {
+    font-size: small;
+  }
+  #body {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
