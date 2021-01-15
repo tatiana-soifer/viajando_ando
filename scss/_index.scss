@@ -35,3 +35,19 @@
 .top5__cuidades{
     color: black;
 }
+
+/*--TOP DESTINATIONS--*/
+.top__destinations{
+    padding: 1%;
+    margin: 1%;
+    img{
+        h3{
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+.top__destinations__img:hover{
+    filter: opacity .5s;
+}
