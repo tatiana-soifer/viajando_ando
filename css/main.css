@@ -50,12 +50,12 @@
 }
 
 /*--TOP DESTINATIONS--*/
-.top__destinations {
+.destinations__sec {
   padding: 1%;
   margin: 1%;
 }
 
-.top__destinations img h3 {
+.destinations__sec img h3 {
   text-align: center;
   color: white;
 }
