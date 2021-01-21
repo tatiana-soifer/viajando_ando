@@ -1,3 +1,25 @@
+/*--DESCRIPCION--*/
+.descripcion{
+    text-align: center!important;
+    line-height: 28px;
+    height: 10%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+}
+
+/*--TOP DESTINATIONS--*/
+.destinations{
+    padding: 1%;
+    margin: 1%;
+    background-color: $gris;
+        h3{
+            text-align: center;
+            margin-top: 5%;
+        }
+}
+
 /*--ARTICULO APPS--*/
 .apps__art{
     border: none;
@@ -17,37 +39,14 @@
     margin-right: 30%;
 }
 
-/*--COLUMNA TOP5--*/
-.top5{
-    display: block;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.top5__sec{
-    border: dashed;
-    padding: 1%;
-    margin: 1%;
-    background-color: $gris;
-    list-style-position: inside;
-
-}
-.top5__cuidades{
-    color: black;
-}
-
-/*--TOP DESTINATIONS--*/
-.destinations__sec{
-    padding: 1%;
-    margin: 1%;
-    img{
-        h3{
-            text-align: center;
-            color: white;
-        }
+/*--RESPONSIVE--*/
+@media only screen and (max-width: 767px){
+    .descripcion{
+        font-size: 24px;
+        line-height: 28px;
+        height: 56px;
+        margin-top: 16px;
+        margin-bottom: 15%;
+        justify-content: center;
     }
-}
-
-.top__destinations__img:hover{
-    filter: opacity .5s;
 }
