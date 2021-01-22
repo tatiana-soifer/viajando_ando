@@ -18,6 +18,9 @@
             text-align: center;
             margin-top: 5%;
         }
+        img{
+
+        }
 }
 
 /*--ARTICULO APPS--*/
@@ -40,7 +43,17 @@
 }
 
 /*--RESPONSIVE--*/
-@media only screen and (max-width: 767px){
+@media (min-width:240px) and (max-width:480px){
+    .descripcion{
+        font-size: 24px;
+        line-height: 28px;
+        height: 56px;
+        margin-top: 16px;
+        margin-bottom: 15%;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .descripcion{
         font-size: 24px;
         line-height: 28px;
