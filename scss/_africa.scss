@@ -1,3 +1,8 @@
+/*--VARIOS--*/
+h1{
+    text-align: center;
+}
+
 /*--ARTICULO ETIOPIA--*/
 .etiopia__sec{
     display: flex;
@@ -6,6 +11,7 @@
     article{
             justify-content: center;
             background-color: $gris;
+            list-style-position: inside;
     }
     img{
         display: flex;

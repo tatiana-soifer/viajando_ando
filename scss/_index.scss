@@ -11,13 +11,18 @@
 
 /*--TOP DESTINATIONS--*/
 .destinations{
-    padding: 1%;
-    margin: 1%;
-    background-color: $gris;
-    h3{
+    a{
+        color: white;
+        font-size: 30px;
         text-align: center;
-        margin-top: 5%;
     }
+}
+.destinations__color{
+    background-color: $gris;
+}
+.card{
+    margin: 30px;
+    display: flow-root;
 }
 
 /*--ARTICULO APPS--*/
@@ -39,7 +44,18 @@
     margin-right: 30%;
 }
 
+/*--NOSOTROS--*/
+.nosotros{
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
+
 /*--RESPONSIVE--*/
+/*--CELULAR--*/
 @media (min-width:240px) and (max-width:480px){
     .descripcion{
         font-size: 24px;
@@ -50,6 +66,8 @@
         justify-content: center;
     }
 }
+
+/*--TABLET--*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .descripcion{
         font-size: 24px;
