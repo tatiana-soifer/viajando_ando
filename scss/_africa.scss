@@ -13,11 +13,22 @@
         flex-direction: row;
     }
 }
+/*--ARTICULO SUDAFRICA--*/
+.sudafrica__sec{
+    display: flex;
+    justify-content: center;
+    margin: 15%;
+    article{
+            justify-content: center;
+            background-color: $gris;
+            list-style-position: inside;
+    }
+}
 
 /*--RESPONSIVE--*/
 
     /*--Tablet--*/
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (min-width: 768px) and (max-width: 991px){
         #etiopia {
         p{
             font-size: 0.9rem;

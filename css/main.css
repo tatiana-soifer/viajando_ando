@@ -102,6 +102,25 @@
           flex-direction: row;
 }
 
+/*--ARTICULO SUDAFRICA--*/
+.sudafrica__sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15%;
+}
+
+.sudafrica__sec article {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #BBBBBB;
+  list-style-position: inside;
+}
+
 /*--RESPONSIVE--*/
 /*--Tablet--*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -480,6 +499,9 @@ header {
   }
   .social__copy p {
     font-size: small;
+  }
+  .social__copy img {
+    color: white;
   }
   #body {
     padding-right: 15px;
