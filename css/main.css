@@ -37,6 +37,7 @@
 
 #apps__titulo__escritorio {
   background-color: #353A40 !important;
+  margin-bottom: 2%;
 }
 
 /*--NOSOTROS--*/
@@ -301,6 +302,9 @@ h1 {
 }
 
 .bariloche__sec article h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
 }
 
@@ -353,7 +357,6 @@ h1 {
 /*--ARTICULO PARIS--*/
 .paris__sec {
   margin: 5%;
-  margin-right: -15%;
 }
 
 .paris__sec article {
@@ -380,11 +383,6 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   margin: 1%;
-  margin-left: 40%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .paris__sec article h2 {

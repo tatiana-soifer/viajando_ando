@@ -11,7 +11,8 @@
             margin: 2%;
         }
         h2{
-            text-align: center;
+            display: flex;
+            text-align: center;        
         }
         iframe{
             display: flex;
@@ -37,7 +38,7 @@
 }
 
 /*--Celular--*/
-@media (min-width:240px) and (max-width:480px){
+@media (min-width:240px) and (max-width:480px) {
     #bariloche {
         p{
             font-size: 0.9rem;
