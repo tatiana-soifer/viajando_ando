@@ -4,51 +4,45 @@
     justify-content: center;
     margin: auto;
     article{
-            border: solid;
-            border-radius: 5px;
-            width: 50%;
-            height: 80%;
-            background-color: $gris;
-            h1{
-                display: flex;
-                margin-left: 40%;
-                flex-direction: row;
-            }
-            p{
-                margin: 2%;
-            }
-            img{
-                display: flex;
-                margin: auto;
-                flex-direction: row;
-            }
+        justify-content: center;
+        width: 60%;
+        height: 80%;
+        background-color: $gris;
+        margin-bottom: 1%;
+        img{
+            display: flex;
+            margin: auto;
+            flex-direction: row;
+        }
+        p{
+            margin: 2%;
+        }
     }
 }
-    
+
 /*--RESPONSIVE--*/
-
-    /*--Tablet--*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/*--Tablet--*/
+@media (min-width: 481px) and (max-width: 991px) {
     #turquia {
-            p{
-                font-size: 0.9rem;
-            }
-            img{
-                margin: 5% 5% 5% 5%;
-                width: 95%;
-            }
+        p{
+            font-size: 0.9rem;
+        }
+        img{
+            margin: 5% 5% 5% 5%;
+            width: 95%;
+        }
     }
 }
 
-    /*--Celular--*/
-@media (min-width:240px) and (max-width:480px){
+/*--Celular--*/
+@media (min-width:240px) and (max-width:480px) {
     #turquia {
-            p{
-                font-size: 0.9rem;
-            }
-            img{
-                margin: 5% 5% 5% 5%;
-                width: 100%;
-            }
-        }   
+        p{
+            font-size: 0.9rem;
+        }
+        img{
+            margin: 5% 5% 5% 5%;
+            width: 100%;
+        }
+    }   
 }

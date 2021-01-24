@@ -7,7 +7,7 @@ h1{
 .etiopia__sec{
     display: flex;
     justify-content: center;
-    margin: 15%;
+    margin: 10%;
     article{
             justify-content: center;
             background-color: $gris;
@@ -23,7 +23,7 @@ h1{
 .sudafrica__sec{
     display: flex;
     justify-content: center;
-    margin: 15%;
+    margin: 10%;
     article{
             justify-content: center;
             background-color: $gris;
@@ -33,9 +33,9 @@ h1{
 
 /*--RESPONSIVE--*/
 
-    /*--Tablet--*/
-    @media only screen and (min-width: 768px) and (max-width: 991px){
-        #etiopia {
+/*--Tablet--*/
+@media (min-width: 481px) and (max-width: 991px) {
+    #etiopia {
         p{
             font-size: 0.9rem;
         }
@@ -44,18 +44,30 @@ h1{
             width: 95%;
         }
     }
+    #sudafrica{
+        img{
+            margin: 5% 5% 5% 5%;
+            height: 95%;
+        }
+    }
 }
 
-    /*--Celular--*/
-    @media (min-width:240px) and (max-width:480px){
-        #etiopia {
-            p{
-                font-size: 0.9rem;
-            }
-            img{
-                margin: 5% 5% 5% 5%;
-                width: 100%;
-            }
-        }   
+/*--Celular--*/
+@media (min-width:240px) and (max-width:480px){
+    #etiopia {
+        p{
+            font-size: 0.9rem;
+        }
+        img{
+            margin: 5% 5% 5% 5%;
+            width: 100%;
+        }
     }
+    #sudafrica{
+        img{
+            margin: 5% 5% 5% 5%;
+            height: 95%;
+        }
+    }
+}   
 

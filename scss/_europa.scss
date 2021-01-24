@@ -16,26 +16,25 @@
         background-color: $gris;
         list-style-position: inside;
         margin: 2%;
-            li{
-                margin: 1%;
-            }
-            p{
-                margin: 1%;
-            }
-            img{
-                display: flex;
-                margin: 1%;
-                margin-left: 40%;
-                flex-direction: row;
-            }
-            h2{
-                display: flex;
-                margin-left: 15%;
-                flex-direction: row;
-            }
+        li{
+            margin: 1%;
+        }
+        p{
+            margin: 1%;
+        }
+        img{
+            display: flex;
+            margin: 1%;
+            margin-left: 40%;
+            flex-direction: row;
+        }
+        h2{
+            display: flex;
+            margin-left: 15%;
+            flex-direction: row;
+        }
     }
 }
-
 
 
 /*--ARTICULO ROMA--*/
@@ -61,4 +60,15 @@
                 margin-left: 2%;
             }
     }
+}
+
+/*--RESPONSIVE--*/
+/*--CELULAR--*/
+@media (min-width:240px) and (max-width:480px){
+
+}
+
+/*--TABLET--*/
+@media (min-width: 481px) and (max-width: 991px) {
+    
 }

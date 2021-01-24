@@ -1,6 +1,6 @@
 /*--DESCRIPCION--*/
 .descripcion {
-  text-align: center !important;
+  text-align: center;
   line-height: 28px;
   height: 10%;
   margin-bottom: 5%;
@@ -10,53 +10,57 @@
 }
 
 /*--TOP DESTINATIONS--*/
-.destinations a {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-}
-
-.destinations__color {
+.destinations {
+  margin-bottom: 10%;
   background-color: #BBBBBB;
 }
 
-.card {
+.destinations a {
+  color: white;
+  font-size: 30px;
+  margin-top: 55px;
+}
+
+.destinations .card {
   margin: 30px;
   display: flow-root;
 }
 
 /*--ARTICULO APPS--*/
-.apps__art {
-  border: none;
-}
-
-.apps__borde {
-  border: 1px solid black;
-  width: 70%;
-  list-style-position: inside;
-  padding: 2%;
-  border-radius: 5px;
+.apps__sec {
   background-color: #BBBBBB;
 }
 
-.apps__sec {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-top: auto;
-  margin-right: 30%;
+#apps__titulo {
+  background-color: #353A40 !important;
+}
+
+#apps__titulo__escritorio {
+  background-color: #353A40 !important;
 }
 
 /*--NOSOTROS--*/
+.nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10%;
+  padding: 2%;
+  background-color: #BBBBBB;
+}
+
 .nosotros h2 {
   text-align: center;
 }
 
 .nosotros p {
   text-align: center;
+}
+
+.nosotros img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*--RESPONSIVE--*/
@@ -67,15 +71,27 @@
     line-height: 28px;
     height: 56px;
     margin-top: 16px;
-    margin-bottom: 15%;
+    margin-bottom: 55%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .nosotros h2 {
+    font-size: 25px;
+  }
+  .nosotros p {
+    font-size: 0.9rem;
+  }
+  .nosotros img {
+    display: none;
+  }
+  #apps__titulo {
+    display: none;
+  }
 }
 
 /*--TABLET--*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 481px) and (max-width: 991px) {
   .descripcion {
     font-size: 24px;
     line-height: 28px;
@@ -85,6 +101,25 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .nosotros h2 {
+    font-size: 25px;
+  }
+  .nosotros p {
+    font-size: 0.9rem;
+  }
+  .nosotros img {
+    display: none;
+  }
+  #apps__titulo {
+    display: none;
+  }
+}
+
+/*--ESCRITORIO--*/
+@media (min-width: 992px) {
+  #apps__titulo__escritorio {
+    display: none;
   }
 }
 
@@ -101,7 +136,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 15%;
+  margin: 10%;
 }
 
 .etiopia__sec article {
@@ -131,7 +166,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 15%;
+  margin: 10%;
 }
 
 .sudafrica__sec article {
@@ -144,13 +179,17 @@ h1 {
 
 /*--RESPONSIVE--*/
 /*--Tablet--*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 481px) and (max-width: 991px) {
   #etiopia p {
     font-size: 0.9rem;
   }
   #etiopia img {
     margin: 5% 5% 5% 5%;
     width: 95%;
+  }
+  #sudafrica img {
+    margin: 5% 5% 5% 5%;
+    height: 95%;
   }
 }
 
@@ -162,6 +201,10 @@ h1 {
   #etiopia img {
     margin: 5% 5% 5% 5%;
     width: 100%;
+  }
+  #sudafrica img {
+    margin: 5% 5% 5% 5%;
+    height: 95%;
   }
 }
 
@@ -177,15 +220,14 @@ h1 {
 }
 
 .nyc__sec article {
-  border: solid;
-  border-radius: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50%;
+  width: 60%;
   height: 80%;
   list-style-position: inside;
   background-color: #BBBBBB;
+  margin-bottom: 1%;
 }
 
 .nyc__sec article img {
@@ -199,7 +241,7 @@ h1 {
           flex-direction: row;
 }
 
-.nyc__sec article h1 {
+.nyc__sec article h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,7 +258,7 @@ h1 {
 
 /*--RESPONSIVE--*/
 /*--Tablet--*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 481px) and (max-width: 991px) {
   #nyc p {
     font-size: 0.9rem;
   }
@@ -249,26 +291,17 @@ h1 {
 }
 
 .bariloche__sec article {
-  border: solid;
-  border-radius: 5px;
   width: 50%;
   height: 80%;
   background-color: #BBBBBB;
 }
 
-.bariloche__sec article h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 15%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .bariloche__sec article p {
   margin: 2%;
+}
+
+.bariloche__sec article h2 {
+  text-align: center;
 }
 
 .bariloche__sec article iframe {
@@ -285,7 +318,7 @@ h1 {
 
 /*--RESPONSIVE--*/
 /*--Tablet--*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 481px) and (max-width: 991px) {
   #bariloche p {
     font-size: 0.9rem;
   }
@@ -400,12 +433,15 @@ h1 {
   margin-left: 2%;
 }
 
+/*--RESPONSIVE--*/
+/*--CELULAR--*/
+/*--TABLET--*/
 .formulario {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   border: solid;
-  margin: 20%;
+  margin: 10%;
   padding: 1%;
   border-radius: 5px;
   background-color: #BBBBBB;
@@ -482,7 +518,12 @@ header {
 }
 
 .social .social__copy {
-  padding: 1%;
+  padding: 2%;
+}
+
+.social .social__copy p {
+  color: white;
+  margin-left: 2%;
 }
 
 .social img {
@@ -492,10 +533,13 @@ header {
 
 /*--RESPONSIVE--*/
 /*--Tablet--*/
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 991px) {
   .social img {
     margin: 2%;
     padding: 2%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .social__copy {
     text-align: center;
@@ -503,7 +547,7 @@ header {
   #body {
     padding-right: 15px;
     padding-left: 15px;
-    height: 1024PX;
+    height: 1024px;
   }
 }
 
@@ -512,17 +556,17 @@ header {
   .social img {
     margin: 1%;
     padding: 1%;
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .social__copy {
     text-align: center;
   }
   .social__copy p {
     font-size: small;
-  }
-  .social__copy img {
-    color: white;
   }
   #body {
     padding-right: 15px;

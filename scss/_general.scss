@@ -10,7 +10,6 @@ body{
 }
 #body{
     margin-top: 5%;
-
 }
 a{
     text-decoration: none;
@@ -47,7 +46,11 @@ header{
 .social{
     background-color: $gris_nav;
     .social__copy{
-        padding: 1%;
+        padding: 2%;
+        p{
+            color: white;
+            margin-left: 2%;
+        }
     }
     img{
         margin: 15%;
@@ -55,14 +58,15 @@ header{
     }
 }
 
-/*--RESPONSIVE--*/
 
+/*--RESPONSIVE--*/
 /*--Tablet--*/
-@media (max-width:768px){  
+@media (min-width: 481px) and (max-width: 991px) {
     .social{
         img{
             margin: 2%;
             padding: 2%;
+            justify-content: center;
         }
     }
     .social__copy{
@@ -71,7 +75,7 @@ header{
     #body{
         padding-right: 15px;
         padding-left: 15px;
-        height: 1024PX;
+        height: 1024px;
     }
 }
 
@@ -81,17 +85,15 @@ header{
         img{
             margin: 1%;
             padding: 1%;
-            height: 20px;
-            width: 20px;        
+            height: 30px;
+            width: 30px;
+            justify-content: center;        
         }
     }
     .social__copy{
         text-align: center;
         p{
             font-size: small;
-        }
-        img{
-            color: white;
         }
     }
     #body{
