@@ -1,21 +1,20 @@
 /*--ARTICULO TURQUIA--*/
-.turquia__sec{
+#turquia{
     display: flex;
     justify-content: center;
-    margin: auto;
     article{
-        justify-content: center;
-        width: 60%;
-        height: 80%;
+        width: 70%;
         background-color: $gris;
         margin-bottom: 1%;
+        list-style-position: inside;
         img{
             display: flex;
             margin: auto;
-            flex-direction: row;
+            margin-top: 20%;
         }
         p{
             margin: 2%;
+            text-align: justify;
         }
     }
 }

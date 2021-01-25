@@ -1,13 +1,8 @@
-/*--VARIOS--*/
-h1{
-    text-align: center;
-}
-
 /*--ARTICULO ETIOPIA--*/
-.etiopia__sec{
+#etiopia{
     display: flex;
     justify-content: center;
-    margin: 10%;
+    margin: 5%;
     article{
             justify-content: center;
             background-color: $gris;
@@ -18,9 +13,12 @@ h1{
         margin: auto;
         flex-direction: row;
     }
+    p{
+        text-align: justify;
+    }
 }
 /*--ARTICULO SUDAFRICA--*/
-.sudafrica__sec{
+#sudafrica{
     display: flex;
     justify-content: center;
     margin: 10%;
@@ -50,6 +48,10 @@ h1{
             height: 95%;
         }
     }
+    #carousel__responsive{
+        width: 90%;
+        margin: auto;
+    }
 }
 
 /*--Celular--*/
@@ -68,6 +70,10 @@ h1{
             margin: 5% 5% 5% 5%;
             height: 95%;
         }
+    }
+    #carousel__responsive{
+        width: 80%;
+        margin: auto;
     }
 }   
 

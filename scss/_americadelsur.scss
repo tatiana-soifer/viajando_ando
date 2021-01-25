@@ -1,5 +1,5 @@
 /*--ARTICULO BARILOCHE--*/
-.bariloche__sec{
+#bariloche{
     display: flex;
     justify-content: center;
     margin: auto;
@@ -9,15 +9,17 @@
         background-color: $gris;
         p{
             margin: 2%;
+            text-align: justify;
         }
         h2{
             display: flex;
-            text-align: center;        
+            text-align: center;
+            margin-left: 10%;
         }
         iframe{
             display: flex;
             margin: auto;
-            margin-bottom: 4%;
+            margin-bottom: 3%;
             flex-direction: row;
         }
     }

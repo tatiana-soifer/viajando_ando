@@ -45,7 +45,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 10%;
+  margin: 5%;
   padding: 2%;
   background-color: #BBBBBB;
 }
@@ -56,6 +56,7 @@
 
 .nosotros p {
   text-align: center;
+  margin: 5%;
 }
 
 .nosotros img {
@@ -124,23 +125,18 @@
   }
 }
 
-/*--VARIOS--*/
-h1 {
-  text-align: center;
-}
-
 /*--ARTICULO ETIOPIA--*/
-.etiopia__sec {
+#etiopia {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 10%;
+  margin: 5%;
 }
 
-.etiopia__sec article {
+#etiopia article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -148,7 +144,7 @@ h1 {
   list-style-position: inside;
 }
 
-.etiopia__sec img {
+#etiopia img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,8 +155,12 @@ h1 {
           flex-direction: row;
 }
 
+#etiopia p {
+  text-align: justify;
+}
+
 /*--ARTICULO SUDAFRICA--*/
-.sudafrica__sec {
+#sudafrica {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +170,7 @@ h1 {
   margin: 10%;
 }
 
-.sudafrica__sec article {
+#sudafrica article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -192,6 +192,10 @@ h1 {
     margin: 5% 5% 5% 5%;
     height: 95%;
   }
+  #carousel__responsive {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 /*--Celular--*/
@@ -207,10 +211,14 @@ h1 {
     margin: 5% 5% 5% 5%;
     height: 95%;
   }
+  #carousel__responsive {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 /*--ARTICULO NYC--*/
-.nyc__sec {
+#nyc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,7 +228,7 @@ h1 {
   margin: auto;
 }
 
-.nyc__sec article {
+#nyc article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -231,7 +239,7 @@ h1 {
   margin-bottom: 1%;
 }
 
-.nyc__sec article img {
+#nyc article img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,18 +250,18 @@ h1 {
           flex-direction: row;
 }
 
-.nyc__sec article h2 {
+#nyc article h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
 
-.nyc__sec article p {
+#nyc article p {
   margin: 2%;
 }
 
-.nyc__sec article li {
+#nyc article li {
   margin: 2%;
 }
 
@@ -281,7 +289,7 @@ h1 {
 }
 
 /*--ARTICULO BARILOCHE--*/
-.bariloche__sec {
+#bariloche {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,29 +299,31 @@ h1 {
   margin: auto;
 }
 
-.bariloche__sec article {
+#bariloche article {
   width: 50%;
   height: 80%;
   background-color: #BBBBBB;
 }
 
-.bariloche__sec article p {
+#bariloche article p {
   margin: 2%;
+  text-align: justify;
 }
 
-.bariloche__sec article h2 {
+#bariloche article h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  margin-left: 10%;
 }
 
-.bariloche__sec article iframe {
+#bariloche article iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  margin-bottom: 4%;
+  margin-bottom: 3%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -354,19 +364,28 @@ h1 {
   margin: auto;
 }
 
-/*--ARTICULO PARIS--*/
-.paris__sec {
-  margin: 5%;
+.boton {
+  background-color: #353A40;
+  border: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
 }
 
+.extension {
+  background-color: #BBBBBB;
+}
+
+/*--ARTICULO PARIS--*/
 .paris__sec article {
-  border: solid;
-  border-radius: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #BBBBBB;
   list-style-position: inside;
+  text-align: justify;
   margin: 2%;
 }
 
@@ -386,30 +405,17 @@ h1 {
 }
 
 .paris__sec article h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 15%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  margin: 2%;
+  text-align: center;
 }
 
 /*--ARTICULO ROMA--*/
 .roma__sec {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
+  text-align: justify;
+  margin-bottom: 2%;
 }
 
 .roma__sec article {
-  border: solid;
-  border-radius: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -425,10 +431,12 @@ h1 {
 
 .roma__sec article h2 {
   margin: 5%;
+  text-align: center;
 }
 
 .roma__sec article p {
-  margin-left: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 /*--RESPONSIVE--*/
@@ -443,6 +451,59 @@ h1 {
   padding: 1%;
   border-radius: 5px;
   background-color: #BBBBBB;
+}
+
+/*--ARTICULO TURQUIA--*/
+#turquia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#turquia article {
+  width: 70%;
+  background-color: #BBBBBB;
+  margin-bottom: 1%;
+  list-style-position: inside;
+}
+
+#turquia article img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-top: 20%;
+}
+
+#turquia article p {
+  margin: 2%;
+  text-align: justify;
+}
+
+/*--RESPONSIVE--*/
+/*--Tablet--*/
+@media (min-width: 481px) and (max-width: 991px) {
+  #turquia p {
+    font-size: 0.9rem;
+  }
+  #turquia img {
+    margin: 5% 5% 5% 5%;
+    width: 95%;
+  }
+}
+
+/*--Celular--*/
+@media (min-width: 240px) and (max-width: 480px) {
+  #turquia p {
+    font-size: 0.9rem;
+  }
+  #turquia img {
+    margin: 5% 5% 5% 5%;
+    width: 100%;
+  }
 }
 
 /*--BODY--*/
@@ -468,11 +529,12 @@ a {
 
 p {
   line-height: 1.6;
-  color: black;
 }
 
 h1 {
   color: black;
+  text-align: center;
+  margin: 3%;
 }
 
 /*--HEADER--*/

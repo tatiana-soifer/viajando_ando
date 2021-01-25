@@ -4,16 +4,24 @@
     justify-content: space-between;
     margin: auto;
 }
+.boton{
+    background-color: $gris_nav;
+    border: black;
+    color: white;
+    display: flex;
+    justify-items: center;
+}
+.extension{
+    background-color: $gris;
+}
 
 /*--ARTICULO PARIS--*/
 .paris__sec{
-    margin: 5%;
     article{
-        border: solid;
-        border-radius: 5px;
         justify-content: center;
         background-color: $gris;
         list-style-position: inside;
+        text-align: justify;
         margin: 2%;
         li{
             margin: 1%;
@@ -26,22 +34,17 @@
             margin: 1%;
         }
         h2{
-            display: flex;
-            margin-left: 15%;
-            flex-direction: row;
+            margin: 2%;
+            text-align: center;
         }
     }
 }
 
-
 /*--ARTICULO ROMA--*/
 .roma__sec{
-    display: flex;
-    justify-content: center;
-    margin: auto;
+    text-align: justify;
+    margin-bottom: 2%;
     article{
-        border: solid;
-        border-radius: 5px;
         justify-content: center;
         background-color: $gris;
         list-style-position: inside;
@@ -52,9 +55,11 @@
             }
             h2{
                 margin: 5%;
+                text-align: center;
             }
             p{
-                margin-left: 2%;
+                margin-left: 1%;
+                margin-right: 1%;
             }
     }
 }

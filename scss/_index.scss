@@ -11,6 +11,8 @@
 
 /*--TOP DESTINATIONS--*/
 .destinations{
+    margin-bottom: 10%;
+    background-color: $gris;
     a{
         color: white;
         font-size: 30px;
@@ -20,8 +22,6 @@
         margin: 30px;
         display: flow-root;
     }
-    margin-bottom: 10%;
-    background-color: $gris;
 }
 
 /*--ARTICULO APPS--*/
@@ -36,11 +36,10 @@
     margin-bottom: 2%;
 }
 
-
 /*--NOSOTROS--*/
 .nosotros{
     display: flex;
-    margin: 10%;
+    margin: 5%;
     padding: 2%;
     background-color: $gris;
     h2{
@@ -48,6 +47,7 @@
     }
     p{
         text-align: center;
+        margin: 5%;
     }
     img{
         display: flex;
