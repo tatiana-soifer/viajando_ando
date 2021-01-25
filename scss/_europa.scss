@@ -66,11 +66,25 @@
 
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
-@media (min-width:240px) and (max-width:480px){
-
+@media (min-width:240px) and (max-width:480px) {
+    .paris__sec{
+        article{
+            h2{
+            margin: 5%;
+            text-align: center;
+            }
+        }
+    }
 }
 
 /*--TABLET--*/
 @media (min-width: 481px) and (max-width: 991px) {
-    
+    .paris__sec{
+        article{
+            h2{
+            margin: 5%;
+            text-align: center;
+            }
+        }
+    }
 }
