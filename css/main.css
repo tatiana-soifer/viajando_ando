@@ -259,6 +259,7 @@
 
 #nyc article p {
   margin: 2%;
+  text-align: justify;
 }
 
 #nyc article li {
@@ -478,7 +479,6 @@
 }
 
 #turquia article {
-  width: 70%;
   background-color: #BBBBBB;
   margin-bottom: 1%;
   list-style-position: inside;
@@ -500,22 +500,18 @@
 /*--RESPONSIVE--*/
 /*--Tablet--*/
 @media (min-width: 481px) and (max-width: 991px) {
-  #turquia p {
-    font-size: 0.9rem;
-  }
   #turquia img {
     margin: 5% 5% 5% 5%;
+    margin-top: auto;
     width: 95%;
   }
 }
 
 /*--Celular--*/
 @media (min-width: 240px) and (max-width: 480px) {
-  #turquia p {
-    font-size: 0.9rem;
-  }
   #turquia img {
     margin: 5% 5% 5% 5%;
+    margin-top: auto;
     width: 100%;
   }
 }

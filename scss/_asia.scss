@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     article{
-        width: 70%;
         background-color: $gris;
         margin-bottom: 1%;
         list-style-position: inside;
@@ -23,11 +22,9 @@
 /*--Tablet--*/
 @media (min-width: 481px) and (max-width: 991px) {
     #turquia {
-        p{
-            font-size: 0.9rem;
-        }
         img{
             margin: 5% 5% 5% 5%;
+            margin-top: auto;
             width: 95%;
         }
     }
@@ -36,11 +33,9 @@
 /*--Celular--*/
 @media (min-width:240px) and (max-width:480px) {
     #turquia {
-        p{
-            font-size: 0.9rem;
-        }
         img{
             margin: 5% 5% 5% 5%;
+            margin-top: auto;
             width: 100%;
         }
     }   
