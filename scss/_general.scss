@@ -8,9 +8,7 @@ body{
     font-family: 'Sansita', sans-serif;
     background-image: url("../img/mapamundi.jpg");
 }
-#body{
-    margin-top: 5%;
-}
+
 a{
     text-decoration: none;
 }
@@ -73,11 +71,6 @@ header{
     .social__copy{
         text-align: center;
     }
-    #body{
-        padding-right: 15px;
-        padding-left: 15px;
-        height: 1024px;
-    }
 }
 
 /*--Celular--*/
@@ -88,7 +81,7 @@ header{
             padding: 1%;
             height: 30px;
             width: 30px;
-            justify-content: center;        
+            justify-content: center;
         }
     }
     .social__copy{
@@ -97,8 +90,8 @@ header{
             font-size: small;
         }
     }
-    #body{
-        padding-right: 15px;
-        padding-left: 15px;
+    body{
+        background-image: none;
+        background-color: $gris;
     }
 }
