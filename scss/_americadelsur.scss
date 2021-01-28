@@ -17,26 +17,25 @@
         iframe{
             display: flex;
             margin-bottom: 3%;
+            width: 100%;
         }
     }
 }
 
 /*--RESPONSIVE--*/
-/*--Tablet--
+/*--Tablet--*/
 @media (min-width: 481px) and (max-width: 991px) {
     #bariloche {
         iframe{
-            width: 300;
-            height: 150;
+            width: 100%;
         }
 }
-}*/
-/*--Celular--
+}
+/*--Celular--*/
 @media (min-width:240px) and (max-width:480px) {
     #bariloche {
         iframe{
-            width: 300;
-            height: 150;
+            width: 100%;
         }   
     }
-}*/
+}
