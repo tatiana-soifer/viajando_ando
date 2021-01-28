@@ -29,11 +29,12 @@
 .grid_apps {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo" "google_translate transporte trip_case" "google_translate smartify foursquare";
+      grid-template-areas: "titulo titulo titulo" "google_maps transporte trip_case" "google_maps smartify foursquare" "google_trip google_translate .";
   background-color: #BBBBBB;
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
-  margin: 1%;
+  margin: 5%;
+  padding-bottom: 1%;
 }
 
 .grid_apps h3 {
@@ -51,9 +52,8 @@
 }
 
 .google_translate {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
   grid-area: google_translate;
   text-align: justify;
   padding: 2%;
@@ -91,6 +91,25 @@
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: foursquare;
+  text-align: justify;
+  padding: 2%;
+  background-color: #ebf7eb;
+}
+
+.google_trip {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: google_trip;
+  text-align: justify;
+  padding: 2%;
+  background-color: #ebf7eb;
+}
+
+.google_maps {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: google_maps;
   text-align: justify;
   padding: 2%;
   background-color: #ebf7eb;

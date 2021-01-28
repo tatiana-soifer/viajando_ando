@@ -27,12 +27,14 @@
 .grid_apps{
     display: grid;
     grid-template-areas: "titulo titulo titulo"
-                        "google_translate transporte trip_case"
-                        "google_translate smartify foursquare";
+                        "google_maps transporte trip_case"
+                        "google_maps smartify foursquare"
+                        "google_trip google_translate .";
     background-color: $gris;
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
-    margin: 1%;
+    margin: 5%;
+    padding-bottom: 1%;
     h3{
         text-align: center;
     }
@@ -55,7 +57,6 @@
     text-align: justify;
     padding: 2%;
     background-color: $verde_apps;
-
 }
 .trip_case{
     grid-area: trip_case;
@@ -72,6 +73,18 @@
 }
 .foursquare{
     grid-area: foursquare;
+    text-align: justify;
+    padding: 2%;
+    background-color: $verde_apps;
+}
+.google_trip{
+    grid-area: google_trip;
+    text-align: justify;
+    padding: 2%;
+    background-color: $verde_apps;
+}
+.google_maps{
+    grid-area: google_maps;
     text-align: justify;
     padding: 2%;
     background-color: $verde_apps;
