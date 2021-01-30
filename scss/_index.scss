@@ -11,19 +11,21 @@
 
 /*--TOP DESTINATIONS--*/
 .destinations{
-    margin-bottom: 10%;
     background-color: $gris;
+    margin-right: 5%;
+    margin-left: 5%;
     a{
         color: white;
         font-size: 30px;
+        position: absolute;
+        bottom: 10px;
     }
     .card{
-        margin: 30px;
-        display: flow-root;
-
+        padding: 0%;
+        border: none;
     }
-}
 
+}
 /*--ARTICULO APPS--*/
 .grid_apps{
     display: grid;
@@ -33,6 +35,7 @@
                         "google_trip transporte xe";
     grid-column-gap: 1.1rem;
     grid-row-gap: 1.1rem;
+    grid-auto-flow: column;
     background-color: $gris;
     margin: 5%;
     padding-bottom: 1%;
