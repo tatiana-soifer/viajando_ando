@@ -71,6 +71,10 @@ header{
             justify-content: center;
         }
     }
+    .logo{
+        height: 90%;
+        width: 90%;
+    }
     .social__copy{
         text-align: center;
     }
@@ -80,6 +84,10 @@ header{
 @media (min-width:240px) and (max-width:480px) {
     #body{
         background-color: $gris;
+    }
+    .logo{
+        height: 50%;
+        width: 75%;
     }
     .social{
         img{

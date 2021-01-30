@@ -309,14 +309,6 @@
     margin: 5% 5% 5% 5%;
     width: 95%;
   }
-  #sudafrica img {
-    margin: 5% 5% 5% 5%;
-    height: 95%;
-  }
-  #carousel__responsive {
-    width: 90%;
-    margin: auto;
-  }
 }
 
 /*--CELULAR--*/
@@ -327,14 +319,6 @@
   #etiopia img {
     margin: 5% 5% 5% 5%;
     width: 100%;
-  }
-  #sudafrica img {
-    margin: 5% 5% 5% 5%;
-    height: 95%;
-  }
-  #carousel__responsive {
-    width: 80%;
-    margin: auto;
   }
 }
 
@@ -353,7 +337,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 60%;
+  width: 85%;
   height: 80%;
   list-style-position: inside;
   background-color: #BBBBBB;
@@ -718,6 +702,10 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .logo {
+    height: 90%;
+    width: 90%;
+  }
   .social__copy {
     text-align: center;
   }
@@ -727,6 +715,10 @@ header {
 @media (min-width: 240px) and (max-width: 480px) {
   #body {
     background-color: #BBBBBB;
+  }
+  .logo {
+    height: 50%;
+    width: 75%;
   }
   .social img {
     margin: 1%;
