@@ -62,7 +62,10 @@ header{
 
 
 /*--RESPONSIVE--*/
-/*--Tablet--*/
+/*--CELULAR--*/
+
+
+/*--TABLET--*/
 @media (min-width: 481px) and (max-width: 991px) {
     .social{
         img{
@@ -80,7 +83,7 @@ header{
     }
 }
 
-/*--Celular--*/
+/*--CELULAR--*/
 @media (min-width:240px) and (max-width:480px) {
     #body{
         background-color: $gris;

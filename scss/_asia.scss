@@ -6,11 +6,6 @@
         background-color: $gris;
         margin-bottom: 1%;
         list-style-position: inside;
-        img{
-            display: flex;
-            margin: auto;
-            margin-top: 20%;
-        }
         p{
             margin: 2%;
             text-align: justify;
@@ -18,25 +13,37 @@
     }
 }
 
+
 /*--RESPONSIVE--*/
 /*--Tablet--*/
 @media (min-width: 481px) and (max-width: 991px) {
-    #turquia {
-        img{
-            margin: 5% 5% 5% 5%;
-            margin-top: auto;
-            width: 95%;
-        }
+    .escritorio{
+        display: none;
+    }
+    img{
+        margin-top: 35%;
+        margin-left: 10%;
     }
 }
 
 /*--Celular--*/
 @media (min-width:240px) and (max-width:480px) {
-    #turquia {
-        img{
-            margin: 5% 5% 5% 5%;
-            margin-top: auto;
-            width: 100%;
-        }
-    }   
+    .celular{
+        display: none;
+    }
+    .escritorio{
+        margin: 7%;
+        padding: 0%;
+        width: 100%;
+    }
 }
+
+/*--ESCRITORIO--*/
+@media (min-width: 991px) {
+    .escritorio{
+        display: none;
+    }
+    img{
+        margin-top: 8%;
+    }
+}   

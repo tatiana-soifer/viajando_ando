@@ -184,7 +184,6 @@
         margin-bottom: 15%;
         justify-content: center;
     }
-
     .destinations{
         margin-top: 10%;
         margin-bottom: 6%;
@@ -199,7 +198,7 @@
         margin: 2%;
         padding: auto;
         display: grid;
-        grid-template-areas:    "titulo titulo"
+        grid-template-areas:    "titulo"
                                 "google_maps yelp"
                                 "citymapper google_translate"
                                 "smartify foursquare"
