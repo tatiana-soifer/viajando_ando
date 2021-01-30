@@ -29,10 +29,10 @@
 .grid_apps {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo" "google_maps transporte trip_case" "google_maps smartify foursquare" "google_trip google_translate .";
+      grid-template-areas: "titulo titulo titulo" "google_maps yelp citymapper" "google_translate smartify foursquare" "google_trip transporte xe";
+  grid-column-gap: 1.1rem;
+  grid-row-gap: 1.1rem;
   background-color: #BBBBBB;
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
   margin: 5%;
   padding-bottom: 1%;
 }
@@ -41,41 +41,49 @@
   text-align: center;
 }
 
+.apps {
+  text-align: center;
+}
+
 .titulo {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: titulo;
-  background-color: #353A40;
   color: #ebf7eb;
   text-align: center;
+  border-radius: 30px;
+  background-color: #353A40;
 }
 
 .google_translate {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: google_translate;
   text-align: justify;
   padding: 2%;
   background-color: #ebf7eb;
+  border-radius: 30px;
 }
 
 .transporte {
-  -ms-grid-row: 2;
+  -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: transporte;
   text-align: justify;
   padding: 2%;
   background-color: #ebf7eb;
+  border-radius: 30px;
 }
 
-.trip_case {
+.citymapper {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
-  grid-area: trip_case;
+  grid-area: citymapper;
   text-align: justify;
   padding: 2%;
   background-color: #ebf7eb;
+  border-radius: 30px;
 }
 
 .smartify {
@@ -85,6 +93,7 @@
   text-align: justify;
   padding: 2%;
   background-color: #ebf7eb;
+  border-radius: 30px;
 }
 
 .foursquare {
@@ -94,6 +103,7 @@
   text-align: justify;
   padding: 2%;
   background-color: #ebf7eb;
+  border-radius: 30px;
 }
 
 .google_trip {
@@ -103,16 +113,37 @@
   text-align: justify;
   padding: 2%;
   background-color: #ebf7eb;
+  border-radius: 30px;
 }
 
 .google_maps {
   -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: google_maps;
   text-align: justify;
   padding: 2%;
   background-color: #ebf7eb;
+  border-radius: 30px;
+}
+
+.yelp {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: yelp;
+  text-align: justify;
+  padding: 2%;
+  background-color: #ebf7eb;
+  border-radius: 30px;
+}
+
+.xe {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: xe;
+  text-align: justify;
+  padding: 2%;
+  background-color: #ebf7eb;
+  border-radius: 30px;
 }
 
 /*--NOSOTROS--*/
@@ -138,6 +169,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 10px;
 }
 
 /*--RESPONSIVE--*/
@@ -166,8 +198,13 @@
     display: none;
   }
   .grid_apps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: auto;
     padding: auto;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
   }
 }
 
@@ -606,6 +643,11 @@ h1 {
   color: black;
   text-align: center;
   margin: 3%;
+}
+
+#shadow {
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*--HEADER--*/

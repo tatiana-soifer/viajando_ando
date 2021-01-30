@@ -20,6 +20,7 @@
     .card{
         margin: 30px;
         display: flow-root;
+
     }
 }
 
@@ -27,69 +28,91 @@
 .grid_apps{
     display: grid;
     grid-template-areas: "titulo titulo titulo"
-                        "google_maps transporte trip_case"
-                        "google_maps smartify foursquare"
-                        "google_trip google_translate .";
+                        "google_maps yelp citymapper"
+                        "google_translate smartify foursquare"
+                        "google_trip transporte xe";
+    grid-column-gap: 1.1rem;
+    grid-row-gap: 1.1rem;
     background-color: $gris;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
     margin: 5%;
     padding-bottom: 1%;
     h3{
         text-align: center;
     }
-
 }
+.apps{
+    text-align: center;
+    }
 .titulo{
     grid-area: titulo;
-    background-color: $gris_nav;
     color: $verde_apps;
     text-align: center;
+    border-radius: 30px;
+    background-color: $gris_nav;
 }
 .google_translate{
     grid-area: google_translate;
     text-align: justify;
     padding: 2%;
     background-color: $verde_apps;
+    border-radius: 30px;
 }
 .transporte{
     grid-area: transporte;
     text-align: justify;
     padding: 2%;
     background-color: $verde_apps;
+    border-radius: 30px;
 }
-.trip_case{
-    grid-area: trip_case;
+.citymapper{
+    grid-area: citymapper;
     text-align: justify;
     padding: 2%;
     background-color: $verde_apps;
+    border-radius: 30px;
 }
 .smartify{
     grid-area: smartify;
     text-align: justify;
     padding: 2%;
     background-color: $verde_apps;
-
+    border-radius: 30px;
 }
 .foursquare{
     grid-area: foursquare;
     text-align: justify;
     padding: 2%;
     background-color: $verde_apps;
+    border-radius: 30px;
 }
 .google_trip{
     grid-area: google_trip;
     text-align: justify;
     padding: 2%;
     background-color: $verde_apps;
+    border-radius: 30px;
 }
 .google_maps{
     grid-area: google_maps;
     text-align: justify;
     padding: 2%;
     background-color: $verde_apps;
+    border-radius: 30px;
 }
-
+.yelp{
+    grid-area: yelp;
+    text-align: justify;
+    padding: 2%;
+    background-color: $verde_apps;
+    border-radius: 30px;
+}
+.xe{
+    grid-area: xe;
+    text-align: justify;
+    padding: 2%;
+    background-color: $verde_apps;
+    border-radius: 30px;
+}
 
 /*--NOSOTROS--*/
 .nosotros{
@@ -106,6 +129,7 @@
     }
     img{
         display: flex;
+        border-radius: 10px;
     }
 }
     
@@ -135,8 +159,10 @@
         }
     }
     .grid_apps{
+        display: flex;
         margin: auto;
         padding: auto;
+        grid-template-columns: auto;
     }
 }
 
