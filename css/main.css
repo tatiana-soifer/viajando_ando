@@ -18,9 +18,8 @@
 
 .destinations a {
   color: white;
-  font-size: 30px;
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
 }
 
 .destinations .card {
@@ -179,9 +178,6 @@
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
 @media (min-width: 240px) and (max-width: 480px) {
-  #body {
-    background-color: #BBBBBB;
-  }
   .descripcion {
     font-size: 24px;
     line-height: 28px;
@@ -192,6 +188,13 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .grid_apps {
+    margin: 2%;
+    padding: auto;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo" "google_maps" "yelp" "citymapper" "google_translate" "smartify" "foursquare" "google_trip" "transporte" "xe";
+  }
   .nosotros h2 {
     font-size: 25px;
   }
@@ -200,15 +203,6 @@
   }
   .nosotros img {
     display: none;
-  }
-  .grid_apps {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto;
-    padding: auto;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
   }
 }
 
@@ -224,6 +218,23 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .destinations {
+    margin-top: 10%;
+    margin-bottom: 6%;
+    padding: 1%;
+  }
+  .destinations a {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+  }
+  .grid_apps {
+    margin: 2%;
+    padding: auto;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "titulo titulo" "google_maps yelp" "citymapper google_translate" "smartify foursquare" "google_trip transporte" "xe .";
+  }
   .nosotros h2 {
     font-size: 25px;
   }
@@ -233,19 +244,8 @@
   .nosotros img {
     display: none;
   }
-  .destinations {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
-/*--ESCRITORIO
-@media (min-width:992px){
-    #apps__titulo__escritorio{
-        display: none;
-    }
-}--*/
 /*--ARTICULO ETIOPIA--*/
 #etiopia {
   display: -webkit-box;
@@ -725,6 +725,9 @@ header {
 
 /*--Celular--*/
 @media (min-width: 240px) and (max-width: 480px) {
+  #body {
+    background-color: #BBBBBB;
+  }
   .social img {
     margin: 1%;
     padding: 1%;
@@ -739,10 +742,6 @@ header {
   }
   .social__copy p {
     font-size: small;
-  }
-  body {
-    background-image: none;
-    background-color: #BBBBBB;
   }
 }
 /*# sourceMappingURL=main.css.map */

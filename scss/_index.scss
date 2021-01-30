@@ -16,9 +16,8 @@
     margin-left: 5%;
     a{
         color: white;
-        font-size: 30px;
         position: absolute;
-        bottom: 10px;
+        bottom: 5px;
     }
     .card{
         padding: 0%;
@@ -139,9 +138,6 @@
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
 @media (min-width:240px) and (max-width:480px){
-    #body{
-        background-color: $gris;
-    }
     .descripcion{
         font-size: 24px;
         line-height: 28px;
@@ -149,6 +145,21 @@
         margin-top: 16px;
         margin-bottom: 55%;
         justify-content: center;
+    }
+    .grid_apps{
+        margin: 2%;
+        padding: auto;
+        display: grid;
+        grid-template-areas:    "titulo"
+                                "google_maps"
+                                "yelp"
+                                "citymapper"
+                                "google_translate"
+                                "smartify"
+                                "foursquare"
+                                "google_trip"
+                                "transporte"
+                                "xe";
     }
     .nosotros{
         h2{
@@ -160,12 +171,6 @@
         img{
             display: none;
         }
-    }
-    .grid_apps{
-        display: flex;
-        margin: auto;
-        padding: auto;
-        grid-template-columns: auto;
     }
 }
 
@@ -179,6 +184,28 @@
         margin-bottom: 15%;
         justify-content: center;
     }
+
+    .destinations{
+        margin-top: 10%;
+        margin-bottom: 6%;
+        padding: 1%;
+        a{
+            color: white;
+            position: absolute;
+            bottom: 10px;
+        }
+    }
+    .grid_apps{
+        margin: 2%;
+        padding: auto;
+        display: grid;
+        grid-template-areas:    "titulo titulo"
+                                "google_maps yelp"
+                                "citymapper google_translate"
+                                "smartify foursquare"
+                                "google_trip transporte"
+                                "xe .";
+    }
     .nosotros{
         h2{
             font-size: 25px;
@@ -190,14 +217,4 @@
             display: none;
         }
     }
-    .destinations{
-        justify-content: center;
-    }
 }
-
-/*--ESCRITORIO
-@media (min-width:992px){
-    #apps__titulo__escritorio{
-        display: none;
-    }
-}--*/

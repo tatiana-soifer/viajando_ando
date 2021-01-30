@@ -78,6 +78,9 @@ header{
 
 /*--Celular--*/
 @media (min-width:240px) and (max-width:480px) {
+    #body{
+        background-color: $gris;
+    }
     .social{
         img{
             margin: 1%;
@@ -92,9 +95,5 @@ header{
         p{
             font-size: small;
         }
-    }
-    body{
-        background-image: none;
-        background-color: $gris;
     }
 }
