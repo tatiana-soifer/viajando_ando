@@ -148,7 +148,8 @@
     }
     .grid_apps{
         margin: 2%;
-        padding: auto;
+        margin-top: 15%;
+        padding: 2%;
         display: grid;
         grid-template-areas:    "titulo"
                                 "google_maps"
@@ -160,6 +161,9 @@
                                 "google_trip"
                                 "transporte"
                                 "xe";
+        p{
+            padding: 2%;
+        }
     }
     .nosotros{
         h2{

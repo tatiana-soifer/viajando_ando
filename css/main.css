@@ -54,7 +54,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: titulo;
-  color: #ebf7eb;
+  color: #e1e1db;
   text-align: center;
   border-radius: 30px;
   background-color: #353A40;
@@ -66,7 +66,7 @@
   grid-area: google_translate;
   text-align: justify;
   padding: 2%;
-  background-color: #ebf7eb;
+  background-color: #e1e1db;
   border-radius: 30px;
 }
 
@@ -76,7 +76,7 @@
   grid-area: transporte;
   text-align: justify;
   padding: 2%;
-  background-color: #ebf7eb;
+  background-color: #e1e1db;
   border-radius: 30px;
 }
 
@@ -86,7 +86,7 @@
   grid-area: citymapper;
   text-align: justify;
   padding: 2%;
-  background-color: #ebf7eb;
+  background-color: #e1e1db;
   border-radius: 30px;
 }
 
@@ -96,7 +96,7 @@
   grid-area: smartify;
   text-align: justify;
   padding: 2%;
-  background-color: #ebf7eb;
+  background-color: #e1e1db;
   border-radius: 30px;
 }
 
@@ -106,7 +106,7 @@
   grid-area: foursquare;
   text-align: justify;
   padding: 2%;
-  background-color: #ebf7eb;
+  background-color: #e1e1db;
   border-radius: 30px;
 }
 
@@ -116,7 +116,7 @@
   grid-area: google_trip;
   text-align: justify;
   padding: 2%;
-  background-color: #ebf7eb;
+  background-color: #e1e1db;
   border-radius: 30px;
 }
 
@@ -126,7 +126,7 @@
   grid-area: google_maps;
   text-align: justify;
   padding: 2%;
-  background-color: #ebf7eb;
+  background-color: #e1e1db;
   border-radius: 30px;
 }
 
@@ -136,7 +136,7 @@
   grid-area: yelp;
   text-align: justify;
   padding: 2%;
-  background-color: #ebf7eb;
+  background-color: #e1e1db;
   border-radius: 30px;
 }
 
@@ -146,7 +146,7 @@
   grid-area: xe;
   text-align: justify;
   padding: 2%;
-  background-color: #ebf7eb;
+  background-color: #e1e1db;
   border-radius: 30px;
 }
 
@@ -191,10 +191,14 @@
   }
   .grid_apps {
     margin: 2%;
-    padding: auto;
+    margin-top: 15%;
+    padding: 2%;
     display: -ms-grid;
     display: grid;
         grid-template-areas: "titulo" "google_maps" "yelp" "citymapper" "google_translate" "smartify" "foursquare" "google_trip" "transporte" "xe";
+  }
+  .grid_apps p {
+    padding: 2%;
   }
   .nosotros h2 {
     font-size: 25px;
@@ -426,7 +430,6 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 3%;
-  width: 100%;
 }
 
 /*--RESPONSIVE--*/
@@ -554,7 +557,7 @@
   margin: 10%;
   padding: 1%;
   border-radius: 5px;
-  background-color: #ebf7eb;
+  background-color: #989896;
 }
 
 .btn {
