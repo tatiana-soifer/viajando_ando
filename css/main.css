@@ -759,13 +759,14 @@ header {
     margin: 0%;
     padding: 4%;
     padding-top: 6%;
+    width: 45%;
   }
   .sociales {
     -ms-grid-column-align: center;
         justify-self: center;
     margin-bottom: 2%;
     margin-right: 0%;
-    width: 55%;
+    width: 47%;
   }
 }
 
