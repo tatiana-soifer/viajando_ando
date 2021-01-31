@@ -15,18 +15,7 @@
 
 
 /*--RESPONSIVE--*/
-/*--Tablet--*/
-@media (min-width: 481px) and (max-width: 991px) {
-    .escritorio{
-        display: none;
-    }
-    img{
-        margin-top: 35%;
-        margin-left: 10%;
-    }
-}
-
-/*--Celular--*/
+/*--CELULAR--*/
 @media (min-width:240px) and (max-width:480px) {
     .celular{
         display: none;
@@ -38,12 +27,28 @@
     }
 }
 
+/*--TABLET--*/
+@media (min-width: 481px) and (max-width: 991px) {
+    .escritorio{
+        display: none;
+    }
+    .celular{
+        img{
+        margin-top: 35%;
+        margin-left: 10%;
+    }
+}
+}
+
 /*--ESCRITORIO--*/
 @media (min-width: 991px) {
     .escritorio{
         display: none;
     }
-    img{
-        margin-top: 8%;
+    .celular{
+        img{
+            margin-top: 10%;
+            margin-left: 35%;
+        }
     }
 }   

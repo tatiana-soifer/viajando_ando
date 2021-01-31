@@ -8,7 +8,6 @@ body{
     font-family: 'Sansita', sans-serif;
     background-image: url("../img/mapamundi.jpg");
 }
-
 a{
     text-decoration: none;
 }
@@ -21,7 +20,7 @@ h1{
     margin: 3%;
 }
 #shadow{
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.24));
 }
 
 /*--HEADER--*/
@@ -43,68 +42,94 @@ header{
 .logo:hover{
     transform: scale(1.1);
 }
-
-/*--REDES SOCIALES--*/
-.social{
-    background-color: $gris_nav;
-    .social__copy{
-        padding: 2%;
-        p{
-            color: white;
-            margin-left: 2%;
-        }
-    }
-    img{
-        margin: 15%;
-        padding: 25%;
-    }
+.logo_a{
+    transition: transform .2s;
+}
+.logo_a:hover{
+    transform: scale(1.1);
 }
 
+/*--REDES SOCIALES--*/
+.grid__footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1rem;
+    background-color: $gris_nav;
+}
+.copy{
+    color: white;
+    margin-left: 10%;
+    margin-top: 4%;
+}
+.sociales{
+    justify-self: end;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    img{
+        margin: 2%;
+        transform: translateX(-15%);
+        transition: 0.5s;
+        }
+}
+.sociales img:hover {
+    transform: scale(1.1);
+}
 
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
-
-
-/*--TABLET--*/
-@media (min-width: 481px) and (max-width: 991px) {
-    .social{
-        img{
-            margin: 2%;
-            padding: 2%;
-            justify-content: center;
-        }
-    }
+@media (min-width:240px) and (max-width:480px) {
     .logo{
-        height: 90%;
-        width: 90%;
+        display: none;
     }
-    .social__copy{
-        text-align: center;
+    .grid__footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .copy{
+        justify-self: center;
+        margin: 0%;
+        padding: 4%;
+        padding-top: 6%;
+    }
+    .sociales{
+        justify-self: center;
+        margin-bottom: 2%;
+        margin-right: 0%;
+        width: 55%;
     }
 }
 
-/*--CELULAR--*/
-@media (min-width:240px) and (max-width:480px) {
-    #body{
-        background-color: $gris;
+/*--TABLET--*/
+@media (min-width: 481px) and (max-width: 991px) {
+        .logo_a{
+        display: none;
     }
-    .logo{
-        height: 50%;
-        width: 75%;
+    .grid__footer{
+        display: grid;
+        grid-template-columns: 1fr;
     }
-    .social{
-        img{
-            margin: 1%;
-            padding: 1%;
-            height: 30px;
-            width: 30px;
-            justify-content: center;
-        }
+    .copy{
+        justify-self: center;
+        margin: 0%;
+        padding-top: 2%;
     }
-    .social__copy{
-        text-align: center;
-        p{
-            font-size: small;
-        }
+    .sociales{
+        justify-self: center;
+        margin-bottom: 2%;
+        margin-right: 0%;
+        width: 22%;
+    }
+}
+
+/*--ESCRITORIO--*/
+@media (min-width: 991px) {
+    .logo_a{
+        display: none;
+    }
+    .sociales{
+        width: 35%;
     }
 }
