@@ -12,29 +12,18 @@
         h2{
             display: flex;
             text-align: center;
-            margin-left: 10%;
-        }
-        iframe{
-            display: flex;
-            margin-bottom: 3%;
         }
     }
 }
 
 /*--RESPONSIVE--*/
 /*--Tablet--*/
-@media (min-width: 481px) and (max-width: 991px) {
-    #bariloche {
-        iframe{
-            width: 100%;
-        }
-}
-}
 /*--Celular--*/
 @media (min-width:240px) and (max-width:480px) {
+    #bariloche {  
+    }
+}
+@media (min-width: 481px) and (max-width: 991px) {
     #bariloche {
-        iframe{
-            width: 100%;
-        }   
     }
 }
