@@ -742,6 +742,10 @@ header {
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
 @media (min-width: 240px) and (max-width: 480px) {
+  #body {
+    background-image: none;
+    background-color: #BBBBBB;
+  }
   .logo {
     display: none;
   }
