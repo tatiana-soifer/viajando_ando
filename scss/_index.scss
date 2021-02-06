@@ -14,15 +14,26 @@
     background-color: $gris;
     margin-right: 5%;
     margin-left: 5%;
-    a{
-        color: white;
+}
+.destinations__contenido{
+    position: relative;
+    display: inline-block;
+    p{
         position: absolute;
         bottom: 5px;
+        color: white;
+        padding-left: 4%;
     }
-    .card{
-        padding: 0%;
-        border: none;
+    img{
+        width: 100%;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        border-radius: 5%;
     }
+}
+.destinations__contenido:hover{
+    cursor: pointer;
+    opacity: 60%;
 }
 /*--ARTICULO APPS--*/
 .grid_apps{
@@ -187,16 +198,6 @@
         margin-top: 16px;
         margin-bottom: 15%;
         justify-content: center;
-    }
-    .destinations{
-        margin-top: 10%;
-        margin-bottom: 6%;
-        padding: 1%;
-        a{
-            color: white;
-            position: absolute;
-            bottom: 10px;
-        }
     }
     .grid_apps{
         margin: 2%;

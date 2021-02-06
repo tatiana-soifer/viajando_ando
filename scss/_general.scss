@@ -46,7 +46,7 @@ header{
     transition: transform .2s;
 }
 .logo_a:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /*--REDES SOCIALES--*/
@@ -105,6 +105,9 @@ header{
         margin-right: 0%;
         width: 47%;
     }
+    .sociales__lg{
+        display: none;
+    }
 }
 
 /*--TABLET--*/
@@ -127,6 +130,9 @@ header{
         margin-right: 0%;
         width: 22%;
     }
+    .sociales__lg{
+        display: none;
+    }
 }
 
 /*--ESCRITORIO--*/
@@ -136,5 +142,8 @@ header{
     }
     .sociales{
         width: 35%;
+    }
+    .sociales__sm{
+        display: none;
     }
 }
