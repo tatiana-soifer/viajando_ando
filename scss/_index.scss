@@ -76,6 +76,10 @@
     padding: 2%;
     background-color: $verde_apps;
     border-radius: 30px;
+    img{
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
 }
 .citymapper{
     grid-area: citymapper;
@@ -133,6 +137,7 @@
     margin: 5%;
     padding: 2%;
     background-color: $gris;
+    border-radius: 10px;
     h2{
         text-align: center;
     }

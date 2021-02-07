@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     margin: 5%;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.24));
     article{
             justify-content: center;
             background-color: $gris;
@@ -20,6 +21,10 @@
         text-align: justify;
     }
 }
+.carrusel{
+    margin-top: 10%;
+}
+
 /*--ARTICULO SUDAFRICA--*/
 #sudafrica{
     display: flex;
@@ -36,6 +41,17 @@
 }
 
 /*--RESPONSIVE--*/
+/*--CELULAR--*/
+@media (min-width:240px) and (max-width:480px){
+    #etiopia {
+        p{
+            font-size: 0.9rem;
+        }
+        img{
+            width: 90%;
+        }
+    }
+}
 
 /*--TABLET--*/
 @media (min-width: 481px) and (max-width: 991px) {
@@ -49,16 +65,5 @@
     }
 }
 
-/*--CELULAR--*/
-@media (min-width:240px) and (max-width:480px){
-    #etiopia {
-        p{
-            font-size: 0.9rem;
-        }
-        img{
-            width: 100%;
-        }
-    }
 
-}   
 

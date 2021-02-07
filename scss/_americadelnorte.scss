@@ -4,20 +4,17 @@
     justify-content: center;
     margin: auto;
     article{
-        justify-content: center;
-        width: 85%;
-        height: 80%;
+        /*--width: 85%;
+        height: 80%;--*/
         list-style-position: inside;
-        background-color: $gris;
+        background-color: red;
         margin-bottom: 1%;
         img{
             display: flex;
             margin: auto;
-            flex-direction: row;
         }
         h2{
-            display: flex;
-            text-align: center;
+            margin: 2%;
         }
         p{
             margin: 2%;
