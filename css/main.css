@@ -44,7 +44,7 @@
 .grid_apps {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo" "google_maps yelp citymapper" "google_translate smartify foursquare" "google_trip transporte xe";
+      grid-template-areas: "titulo titulo titulo" "google_maps yelp citymapper" "google_translate smartify foursquare" "google_trip transporte xe";
   grid-column-gap: 1.1rem;
   grid-row-gap: 1.1rem;
   grid-auto-flow: column;
@@ -214,7 +214,7 @@
     padding: 2%;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "titulo" "google_maps" "yelp" "citymapper" "google_translate" "smartify" "foursquare" "google_trip" "transporte" "xe";
+        grid-template-areas: "titulo" "google_maps" "yelp" "citymapper" "google_translate" "smartify" "foursquare" "google_trip" "transporte" "xe";
   }
   .grid_apps p {
     padding: 2%;
@@ -225,7 +225,7 @@
   .nosotros p {
     font-size: 0.9rem;
   }
-  .nosotros img {
+  .nosotros__lg {
     display: none;
   }
 }
@@ -247,7 +247,7 @@
     padding: auto;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "titulo" "google_maps yelp" "citymapper google_translate" "smartify foursquare" "google_trip transporte" "xe .";
+        grid-template-areas: "titulo" "google_maps yelp" "citymapper google_translate" "smartify foursquare" "google_trip transporte" "xe .";
   }
   .nosotros h2 {
     font-size: 25px;
@@ -255,7 +255,14 @@
   .nosotros p {
     font-size: 0.9rem;
   }
-  .nosotros img {
+  .nosotros__lg {
+    display: none;
+  }
+}
+
+/*--ESCRITORIO--*/
+@media (min-width: 991px) {
+  .nosotros__sm {
     display: none;
   }
 }
@@ -439,7 +446,7 @@
 .grid__bariloche {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "imagen_bariloche lagos hoteles" "imagen_bariloche cerros comidas";
+      grid-template-areas: "imagen_bariloche lagos hoteles" "imagen_bariloche cerros comidas";
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.1rem;
   margin: 3%;
@@ -579,7 +586,7 @@
   .grid__bariloche {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "imagen_bariloche" "lagos" "cerros" "hoteles" "comidas";
+        grid-template-areas: "imagen_bariloche" "lagos" "cerros" "hoteles" "comidas";
     margin: 3%;
     padding-bottom: 1%;
   }
@@ -590,7 +597,7 @@
   .grid__bariloche {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "imagen_bariloche" "lagos" "cerros" "hoteles" "comidas";
+        grid-template-areas: "imagen_bariloche" "lagos" "cerros" "hoteles" "comidas";
     margin: 3%;
     padding-bottom: 1%;
   }

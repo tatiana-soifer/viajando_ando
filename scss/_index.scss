@@ -188,9 +188,9 @@
         p{
             font-size: 0.9rem;
         }
-        img{
-            display: none;
-        }
+    }
+    .nosotros__lg{
+        display: none;
     }
 }
 
@@ -222,8 +222,15 @@
         p{
             font-size: 0.9rem;
         }
-        img{
-            display: none;
-        }
+    }
+    .nosotros__lg{
+        display: none;
+    }
+}
+
+/*--ESCRITORIO--*/
+@media (min-width: 991px) {
+    .nosotros__sm{
+        display: none;
     }
 }
