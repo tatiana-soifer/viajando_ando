@@ -528,6 +528,16 @@
           flex-direction: column;
   justify-items: center;
   opacity: 70%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .back h4 {
@@ -545,19 +555,6 @@
 }
 
 .front {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 800ms;
-          transition-duration: 800ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
-}
-
-.back {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transition-property: -webkit-transform;

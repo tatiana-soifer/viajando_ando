@@ -36,9 +36,6 @@
         border-radius: 30px;
     }
 }
-.front{
-
-}
 .lagos{
     grid-area: lagos;
     padding: 2%;
@@ -76,6 +73,10 @@
 	flex-direction: column;
 	justify-items: center;
     opacity: 70%;
+    backface-visibility: hidden;
+    transition-property: transform;
+    transition-duration: 800ms;
+    transition-timing-function: linear;
     h4{
         position: relative;
         top:10%;
@@ -95,18 +96,10 @@
     transition-duration: 800ms;
     transition-timing-function: linear;
 }
-.back{ 
-    backface-visibility: hidden;
-    transition-property: transform;
-    transition-duration: 800ms;
-    transition-timing-function: linear;
-}
-
 .lagos:hover .front{
             transform: rotateY(-180deg);
             cursor: pointer;
 }
-
 .lagos:hover .back{
             transform: rotateY(0deg);
             cursor: pointer;
