@@ -221,6 +221,7 @@
   }
   .nosotros h2 {
     font-size: 25px;
+    margin-top: 20%;
   }
   .nosotros p {
     font-size: 0.9rem;
@@ -251,6 +252,8 @@
   }
   .nosotros h2 {
     font-size: 25px;
+    margin-top: 20%;
+    margin-bottom: 0%;
   }
   .nosotros p {
     font-size: 0.9rem;
