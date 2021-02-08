@@ -511,7 +511,6 @@
   background-color: #e1e1db;
   border-radius: 30px;
   list-style-position: inside;
-  text-align: justify;
 }
 
 .boton__america {
@@ -538,6 +537,7 @@
           transition-duration: 800ms;
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
+  background-color: red;
 }
 
 .back h4 {

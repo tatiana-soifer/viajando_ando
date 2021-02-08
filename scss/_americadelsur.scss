@@ -63,7 +63,6 @@
     background-color: $verde_apps;
     border-radius: 30px;
     list-style-position: inside;
-    text-align: justify;
 }
 .boton__america{
     margin-left: 36%;
@@ -77,6 +76,7 @@
     transition-property: transform;
     transition-duration: 800ms;
     transition-timing-function: linear;
+    background-color: red;
     h4{
         position: relative;
         top:10%;
