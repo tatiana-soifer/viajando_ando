@@ -10,6 +10,7 @@
             margin: 1%;
             background-color: $verde_apps;
             border-radius: 5%;
+            border: none;
             h3{
                 margin-top: 5%;
                 text-align: center;
@@ -43,7 +44,10 @@
             height: auto;
         }
         .card{
-            margin-bottom: 25%;
+            margin-bottom: 6%!important;
+        }
+        h2{
+            margin-bottom: 8%;
         }
     }   
 }

@@ -376,6 +376,7 @@
   margin: 1%;
   background-color: #e1e1db;
   border-radius: 5%;
+  border: none;
 }
 
 #nyc article .card h3 {
@@ -410,7 +411,10 @@
     height: auto;
   }
   #nyc .card {
-    margin-bottom: 25%;
+    margin-bottom: 6% !important;
+  }
+  #nyc h2 {
+    margin-bottom: 8%;
   }
 }
 
@@ -932,13 +936,13 @@ header {
     margin: 0%;
     padding: 4%;
     padding-top: 6%;
-    width: 45%;
+    width: 65%;
   }
   .sociales {
     -ms-grid-column-align: center;
         justify-self: center;
     margin-bottom: 2%;
-    margin-right: 0%;
+    margin-left: 16%;
     width: 47%;
   }
   .sociales__lg {
