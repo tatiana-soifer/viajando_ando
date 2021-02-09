@@ -4,51 +4,57 @@
     justify-content: center;
     margin: auto;
     article{
-        /*--width: 85%;
-        height: 80%;--*/
-        list-style-position: inside;
-        background-color: red;
-        margin-bottom: 1%;
-        img{
-            display: flex;
-            margin: auto;
-        }
-        h2{
-            margin: 2%;
-        }
-        p{
-            margin: 2%;
-            text-align: justify;
-        }
-        li{
-            margin: 2%;
+        background-color: $gris;
+        padding: 2%;
+        .card{
+            margin: 1%;
+            background-color: $verde_apps;
+            border-radius: 5%;
+            h3{
+                margin-top: 5%;
+                text-align: center;
+            }
+            p{
+                text-align: justify;
+                padding: 4%;
+            }
+            img{
+                padding: 0%;
+                margin: 0%;
+                background-size: cover;
+                width: 100%;
+                border: none;
+                border-radius: 5%;
+            }
         }
     }
+}
+.card-body{
+    padding: 0%!important;
 }
 
 /*--RESPONSIVE--*/
-/*--Tablet--*/
-@media (min-width: 481px) and (max-width: 991px) {
-    #nyc{
-        p{
-            font-size: 0.9rem;
-        }
-        img{
-            margin: 5%;
-            width: 95%;
-        }
-    }
-}
-
-/*--Celular--*/
-@media (min-width:240px) and (max-width:480px) {
+/*--CELULAR--*/
+@media screen and (min-width:240px) and (max-width:480px) {
     #nyc {
-        p{
-            font-size: 0.9rem;
-        }
         img{
             margin: 5%;
             width: 100%;
+            height: auto;
+        }
+        .card{
+            margin-bottom: 25%;
         }
     }   
+}
+
+/*--TABLET--*/
+@media screen and (min-width: 481px) and (max-width: 991px) {
+    #nyc{
+        img{
+            margin: 5%;
+            width: 100%;
+            height: auto;
+        }
+    }
 }

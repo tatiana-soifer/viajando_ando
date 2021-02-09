@@ -98,7 +98,7 @@ header{
 
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
-@media (min-width:240px) and (max-width:480px) {
+@media screen and (min-width:240px) and (max-width:480px) {
     #body{
         background-image: none;
         background-color: $gris;
@@ -130,7 +130,7 @@ header{
 }
 
 /*--TABLET--*/
-@media (min-width: 481px) and (max-width: 991px) {
+@media screen and (min-width: 481px) and (max-width: 991px) {
         .logo_a{
         display: none;
     }
@@ -155,7 +155,7 @@ header{
 }
 
 /*--ESCRITORIO--*/
-@media (min-width: 991px) {
+@media screen and (min-width: 991px) {
     .logo_a{
         display: none;
     }

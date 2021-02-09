@@ -16,7 +16,7 @@
 
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
-@media (min-width:240px) and (max-width:480px) {
+@media screen and (min-width:240px) and (max-width:480px) {
     .celular{
         display: none;
     }
@@ -28,7 +28,7 @@
 }
 
 /*--TABLET--*/
-@media (min-width: 481px) and (max-width: 991px) {
+@media screen and (min-width: 481px) and (max-width: 991px) {
     .escritorio{
         display: none;
     }
@@ -41,7 +41,7 @@
 }
 
 /*--ESCRITORIO--*/
-@media (min-width: 991px) {
+@media screen and (min-width: 991px) {
     .escritorio{
         display: none;
     }

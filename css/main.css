@@ -78,7 +78,7 @@
   -ms-grid-column: 1;
   grid-area: google_translate;
   text-align: justify;
-  padding: 2%;
+  padding: 3%;
   background-color: #e1e1db;
   border-radius: 30px;
 }
@@ -88,7 +88,7 @@
   -ms-grid-column: 2;
   grid-area: transporte;
   text-align: justify;
-  padding: 2%;
+  padding: 3%;
   background-color: #e1e1db;
   border-radius: 30px;
 }
@@ -103,7 +103,7 @@
   -ms-grid-column: 3;
   grid-area: citymapper;
   text-align: justify;
-  padding: 2%;
+  padding: 3%;
   background-color: #e1e1db;
   border-radius: 30px;
 }
@@ -113,7 +113,7 @@
   -ms-grid-column: 2;
   grid-area: smartify;
   text-align: justify;
-  padding: 2%;
+  padding: 3%;
   background-color: #e1e1db;
   border-radius: 30px;
 }
@@ -123,7 +123,7 @@
   -ms-grid-column: 3;
   grid-area: foursquare;
   text-align: justify;
-  padding: 2%;
+  padding: 3%;
   background-color: #e1e1db;
   border-radius: 30px;
 }
@@ -133,7 +133,7 @@
   -ms-grid-column: 1;
   grid-area: google_trip;
   text-align: justify;
-  padding: 2%;
+  padding: 3%;
   background-color: #e1e1db;
   border-radius: 30px;
 }
@@ -143,7 +143,7 @@
   -ms-grid-column: 1;
   grid-area: google_maps;
   text-align: justify;
-  padding: 2%;
+  padding: 3%;
   background-color: #e1e1db;
   border-radius: 30px;
 }
@@ -153,7 +153,7 @@
   -ms-grid-column: 2;
   grid-area: yelp;
   text-align: justify;
-  padding: 2%;
+  padding: 3%;
   background-color: #e1e1db;
   border-radius: 30px;
 }
@@ -163,7 +163,7 @@
   -ms-grid-column: 3;
   grid-area: xe;
   text-align: justify;
-  padding: 2%;
+  padding: 3%;
   background-color: #e1e1db;
   border-radius: 30px;
 }
@@ -197,7 +197,7 @@
 
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
-@media (min-width: 240px) and (max-width: 480px) {
+@media screen and (min-width: 240px) and (max-width: 480px) {
   .descripcion {
     font-size: 24px;
     line-height: 28px;
@@ -232,7 +232,7 @@
 }
 
 /*--TABLET--*/
-@media (min-width: 481px) and (max-width: 991px) {
+@media screen and (min-width: 481px) and (max-width: 991px) {
   .descripcion {
     font-size: 24px;
     line-height: 28px;
@@ -263,7 +263,7 @@
 }
 
 /*--ESCRITORIO--*/
-@media (min-width: 991px) {
+@media screen and (min-width: 991px) {
   .nosotros__sm {
     display: none;
   }
@@ -337,7 +337,7 @@
 
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
-@media (min-width: 240px) and (max-width: 480px) {
+@media screen and (min-width: 240px) and (max-width: 480px) {
   #etiopia p {
     font-size: 0.9rem;
   }
@@ -347,7 +347,7 @@
 }
 
 /*--TABLET--*/
-@media (min-width: 481px) and (max-width: 991px) {
+@media screen and (min-width: 481px) and (max-width: 991px) {
   #etiopia p {
     font-size: 0.9rem;
   }
@@ -368,53 +368,58 @@
 }
 
 #nyc article {
-  /*--width: 85%;
-        height: 80%;--*/
-  list-style-position: inside;
-  background-color: red;
-  margin-bottom: 1%;
+  background-color: #BBBBBB;
+  padding: 2%;
 }
 
-#nyc article img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
+#nyc article .card {
+  margin: 1%;
+  background-color: #e1e1db;
+  border-radius: 5%;
 }
 
-#nyc article h2 {
-  margin: 2%;
+#nyc article .card h3 {
+  margin-top: 5%;
+  text-align: center;
 }
 
-#nyc article p {
-  margin: 2%;
+#nyc article .card p {
   text-align: justify;
+  padding: 4%;
 }
 
-#nyc article li {
-  margin: 2%;
+#nyc article .card img {
+  padding: 0%;
+  margin: 0%;
+  background-size: cover;
+  width: 100%;
+  border: none;
+  border-radius: 5%;
+}
+
+.card-body {
+  padding: 0% !important;
 }
 
 /*--RESPONSIVE--*/
-/*--Tablet--*/
-@media (min-width: 481px) and (max-width: 991px) {
-  #nyc p {
-    font-size: 0.9rem;
-  }
-  #nyc img {
-    margin: 5%;
-    width: 95%;
-  }
-}
-
-/*--Celular--*/
-@media (min-width: 240px) and (max-width: 480px) {
-  #nyc p {
-    font-size: 0.9rem;
-  }
+/*--CELULAR--*/
+@media screen and (min-width: 240px) and (max-width: 480px) {
   #nyc img {
     margin: 5%;
     width: 100%;
+    height: auto;
+  }
+  #nyc .card {
+    margin-bottom: 25%;
+  }
+}
+
+/*--TABLET--*/
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  #nyc img {
+    margin: 5%;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -678,14 +683,14 @@
 
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
-@media (min-width: 240px) and (max-width: 480px) {
+@media screen and (min-width: 240px) and (max-width: 480px) {
   .paris__sec article h2 {
     margin: 5%;
   }
 }
 
 /*--TABLET--*/
-@media (min-width: 481px) and (max-width: 991px) {
+@media screen and (min-width: 481px) and (max-width: 991px) {
   .paris__sec article h2 {
     margin: 5%;
   }
@@ -729,7 +734,7 @@
 
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
-@media (min-width: 240px) and (max-width: 480px) {
+@media screen and (min-width: 240px) and (max-width: 480px) {
   .celular {
     display: none;
   }
@@ -741,7 +746,7 @@
 }
 
 /*--TABLET--*/
-@media (min-width: 481px) and (max-width: 991px) {
+@media screen and (min-width: 481px) and (max-width: 991px) {
   .escritorio {
     display: none;
   }
@@ -752,7 +757,7 @@
 }
 
 /*--ESCRITORIO--*/
-@media (min-width: 991px) {
+@media screen and (min-width: 991px) {
   .escritorio {
     display: none;
   }
@@ -905,7 +910,7 @@ header {
 
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
-@media (min-width: 240px) and (max-width: 480px) {
+@media screen and (min-width: 240px) and (max-width: 480px) {
   #body {
     background-image: none;
     background-color: #BBBBBB;
@@ -942,7 +947,7 @@ header {
 }
 
 /*--TABLET--*/
-@media (min-width: 481px) and (max-width: 991px) {
+@media screen and (min-width: 481px) and (max-width: 991px) {
   .logo_a {
     display: none;
   }
@@ -971,7 +976,7 @@ header {
 }
 
 /*--ESCRITORIO--*/
-@media (min-width: 991px) {
+@media screen and (min-width: 991px) {
   .logo_a {
     display: none;
   }
