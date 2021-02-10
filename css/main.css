@@ -395,7 +395,6 @@
 
 #nyc article .card h2 {
   padding-bottom: 3%;
-  color: rebeccapurple;
 }
 
 #nyc article .card p {
@@ -412,9 +411,9 @@
   cursor: pointer;
 }
 
-#nyc .card :hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+#nyc .card:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .card-body {
@@ -610,6 +609,42 @@
 }
 
 .lagos:hover .back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  cursor: pointer;
+}
+
+.comidas:hover .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  cursor: pointer;
+}
+
+.comidas:hover .back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  cursor: pointer;
+}
+
+.cerros:hover .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  cursor: pointer;
+}
+
+.cerros:hover .back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  cursor: pointer;
+}
+
+.hoteles:hover .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  cursor: pointer;
+}
+
+.hoteles:hover .back {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
   cursor: pointer;
@@ -962,9 +997,7 @@ header {
         justify-self: center;
     text-align: center;
     margin: 0%;
-    padding: 4%;
     padding-top: 6%;
-    width: 65%;
   }
   .sociales {
     -ms-grid-column-align: center;
@@ -1000,7 +1033,6 @@ header {
         justify-self: center;
     margin-bottom: 2%;
     margin-right: 0%;
-    width: 22%;
   }
   .sociales__lg {
     display: none;

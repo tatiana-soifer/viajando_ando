@@ -104,7 +104,30 @@
             transform: rotateY(0deg);
             cursor: pointer;
 }
-
+.comidas:hover .front{
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+.comidas:hover .back{
+    transform: rotateY(0deg);
+    cursor: pointer;
+}
+.cerros:hover .front{
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+.cerros:hover .back{
+    transform: rotateY(0deg);
+    cursor: pointer;
+}
+.hoteles:hover .front{
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+.hoteles:hover .back{
+    transform: rotateY(0deg);
+    cursor: pointer;
+}
 /*--RESPONSIVE--*/
 /*--Celular--*/
 @media (min-width:240px) and (max-width:480px) {
