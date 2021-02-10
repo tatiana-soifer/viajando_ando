@@ -14,7 +14,6 @@
         margin-top: 2%;
         margin-bottom: 2%;
         flex-direction: row;
-        border-radius: 5%;
     }
     p{
         text-align: justify;
@@ -33,9 +32,6 @@
             justify-content: center;
             background-color: $gris;
             list-style-position: inside;
-    }
-    img{
-        border-radius: 5%;
     }
 }
 
@@ -69,8 +65,11 @@
     #etiopia {
         article{
         filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.24));
-        border-radius: 5%;
-
+        }
+    }
+    #sudafrica{
+        article{
+        filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.24));
         }
     }
 }

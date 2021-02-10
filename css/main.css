@@ -299,7 +299,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-radius: 5%;
 }
 
 #etiopia p {
@@ -329,10 +328,6 @@
   list-style-position: inside;
 }
 
-#sudafrica img {
-  border-radius: 5%;
-}
-
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
 @media screen and (min-width: 240px) and (max-width: 480px) {
@@ -359,7 +354,10 @@
   #etiopia article {
     -webkit-filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.24));
             filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.24));
-    border-radius: 5%;
+  }
+  #sudafrica article {
+    -webkit-filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.24));
+            filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.24));
   }
 }
 
@@ -395,6 +393,10 @@
           transform: scale(1);
 }
 
+#nyc article .card h2 {
+  padding-bottom: 3%;
+}
+
 #nyc article .card p {
   text-align: justify;
   padding: 4%;
@@ -406,9 +408,10 @@
   background-size: cover;
   width: 100%;
   border: none;
+  cursor: pointer;
 }
 
-#nyc :hover .card {
+#nyc .card :hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
@@ -420,6 +423,7 @@
 #card__nyc h3 {
   text-align: center;
   color: white;
+  font-weight: 400;
 }
 
 /*--RESPONSIVE--*/
@@ -468,9 +472,6 @@
 }
 
 #bariloche article h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-align: center;
 }
 
@@ -566,7 +567,8 @@
           transition-duration: 800ms;
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
-  background-color: red;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .back h4 {
@@ -594,6 +596,7 @@
           transition-duration: 800ms;
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
+  position: absolute;
 }
 
 .lagos:hover .front {

@@ -3,14 +3,13 @@
     display: flex;
     justify-content: center;
     margin: auto;
-    article{  
+    article{
         background-color: $gris;
         p{
             margin: 2%;
             text-align: justify;
         }
         h2{
-            display: flex;
             text-align: center;
         }
     }
@@ -76,7 +75,7 @@
     transition-property: transform;
     transition-duration: 800ms;
     transition-timing-function: linear;
-    background-color: red;
+    transform: rotateY(180deg);
     h4{
         position: relative;
         top:10%;
@@ -95,6 +94,7 @@
     transition-property: transform;
     transition-duration: 800ms;
     transition-timing-function: linear;
+    position: absolute;
 }
 .lagos:hover .front{
             transform: rotateY(-180deg);
