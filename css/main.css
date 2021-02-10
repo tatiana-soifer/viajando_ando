@@ -449,6 +449,9 @@
     width: 100%;
     height: auto;
   }
+  #nyc .card {
+    margin-bottom: 6% !important;
+  }
 }
 
 /*--ARTICULO BARILOCHE--*/
