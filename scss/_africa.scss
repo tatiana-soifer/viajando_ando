@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     margin: 5%;
-    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.24));
     article{
             justify-content: center;
             background-color: $gris;
@@ -65,5 +64,14 @@
     }
 }
 
+/*--ESCRITORIO--*/
+@media screen and (min-width: 991px) {
+    #etiopia {
+        article{
+        filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.24));
+        border-radius: 5%;
 
+        }
+    }
+}
 

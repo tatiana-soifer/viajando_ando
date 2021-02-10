@@ -9,8 +9,12 @@
         .card{
             margin: 1%;
             background-color: $verde_apps;
-            border-radius: 5%;
             border: none;
+            transition-property: initial;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            transform: scale(1);
             h3{
                 margin-top: 5%;
                 text-align: center;
@@ -25,10 +29,12 @@
                 background-size: cover;
                 width: 100%;
                 border: none;
-                border-radius: 5%;
             }
         }
     }
+}
+#nyc :hover .card {
+    transform: scale(1.02);
 }
 .card-body{
     padding: 0%!important;
