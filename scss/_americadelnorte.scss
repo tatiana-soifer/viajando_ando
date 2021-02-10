@@ -15,10 +15,6 @@
             transition-timing-function: ease;
             transition-delay: 0s;
             transform: scale(1);
-            h3{
-                margin-top: 5%;
-                text-align: center;
-            }
             p{
                 text-align: justify;
                 padding: 4%;
@@ -33,11 +29,17 @@
         }
     }
 }
-#nyc :hover .card {
-    transform: scale(1.02);
+#nyc :hover .card{
+    transform: scale(1.03);
 }
 .card-body{
     padding: 0%!important;
+}
+#card__nyc{
+    h3{
+        text-align: center;
+        color: white;
+    }
 }
 
 /*--RESPONSIVE--*/

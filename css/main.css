@@ -395,11 +395,6 @@
           transform: scale(1);
 }
 
-#nyc article .card h3 {
-  margin-top: 5%;
-  text-align: center;
-}
-
 #nyc article .card p {
   text-align: justify;
   padding: 4%;
@@ -414,12 +409,17 @@
 }
 
 #nyc :hover .card {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .card-body {
   padding: 0% !important;
+}
+
+#card__nyc h3 {
+  text-align: center;
+  color: white;
 }
 
 /*--RESPONSIVE--*/
