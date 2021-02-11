@@ -335,7 +335,8 @@
     font-size: 0.9rem;
   }
   #etiopia img {
-    width: 90%;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -345,7 +346,8 @@
     font-size: 0.9rem;
   }
   #etiopia img {
-    width: 95%;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -467,7 +469,7 @@
 }
 
 #bariloche article {
-  background-color: red;
+  background-color: #BBBBBB;
   width: auto;
 }
 
