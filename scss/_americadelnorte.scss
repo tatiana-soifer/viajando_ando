@@ -43,8 +43,13 @@
     h3{
         text-align: center;
         color: white;
-        font-weight: 400;
+        font-weight: bold;
     }
+}
+.card-img-overlay{
+    top: auto;
+    bottom: 46%;
+    margin-bottom: 0%;
 }
 
 /*--RESPONSIVE--*/

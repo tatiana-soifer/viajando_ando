@@ -425,7 +425,13 @@
 #card__nyc h3 {
   text-align: center;
   color: white;
-  font-weight: 400;
+  font-weight: bold;
+}
+
+.card-img-overlay {
+  top: auto;
+  bottom: 46%;
+  margin-bottom: 0%;
 }
 
 /*--RESPONSIVE--*/
@@ -797,39 +803,8 @@
 
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
-@media screen and (min-width: 240px) and (max-width: 480px) {
-  .celular {
-    display: none;
-  }
-  .escritorio {
-    margin: 7%;
-    padding: 0%;
-    width: 100%;
-  }
-}
-
 /*--TABLET--*/
-@media screen and (min-width: 481px) and (max-width: 991px) {
-  .escritorio {
-    display: none;
-  }
-  .celular img {
-    margin-top: 35%;
-    margin-left: 10%;
-  }
-}
-
 /*--ESCRITORIO--*/
-@media screen and (min-width: 991px) {
-  .escritorio {
-    display: none;
-  }
-  .celular img {
-    margin-top: 10%;
-    margin-left: 35%;
-  }
-}
-
 /*--BODY--*/
 * {
   -webkit-box-sizing: border-box;
