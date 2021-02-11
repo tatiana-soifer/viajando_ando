@@ -115,7 +115,9 @@ header{
         justify-self: center;
         text-align: center;
         margin: 0%;
+        padding: 4%;
         padding-top: 6%;
+        width: 65%;
     }
     .sociales{
         justify-self: center;
@@ -130,22 +132,11 @@ header{
 
 /*--TABLET--*/
 @media screen and (min-width: 481px) and (max-width: 991px) {
-        .logo_a{
+    .logo_a{
         display: none;
     }
-    .grid__footer{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .copy{
-        justify-self: center;
-        margin: 0%;
-        padding-top: 2%;
-    }
     .sociales{
-        justify-self: center;
-        margin-bottom: 2%;
-        margin-right: 0%;
+        width: 22%;
     }
     .sociales__lg{
         display: none;

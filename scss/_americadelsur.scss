@@ -3,90 +3,62 @@
     display: flex;
     justify-content: center;
     margin: auto;
+    margin-bottom: 2%;
     article{
-        background-color: $gris;
+        background-color: red;
+        width: auto;
         p{
             margin: 2%;
             text-align: justify;
         }
         h2{
             text-align: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
         }
     }
 }
 .grid__bariloche{
     display: grid;
-    grid-template-areas:"imagen_bariloche lagos hoteles"
-                        "imagen_bariloche cerros comidas";
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1.1rem;
-    margin: 3%;
-    padding-bottom: 1%;
-    h4{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1.3rem;
+    grid-row-gap: 1.3rem;    
+    margin-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    h3{
         text-align: center;
         font-weight: bold;
     }
-}
-.imagen_bariloche{
-    grid-area: imagen_bariloche;
-    padding: 2%;
-    border-radius: 30px;
     img{
-        border-radius: 30px;
+        position: absolute;
     }
-}
-.lagos{
-    grid-area: lagos;
-    padding: 2%;
-    background-color: $verde_apps;
-    border-radius: 30px;
-    list-style-position: inside;
-}
-.comidas{
-    grid-area: comidas;
-    padding: 2%;
-    background-color: $verde_apps;
-    border-radius: 30px;
-    list-style-position: inside;
-}
-.hoteles{
-    grid-area: hoteles;
-    padding: 2%;
-    background-color: $verde_apps;
-    border-radius: 30px;
-    list-style-position: inside;
-}
-.cerros{
-    grid-area: cerros;
-    padding: 2%;
-    background-color: $verde_apps;
-    border-radius: 30px;
-    list-style-position: inside;
-}
-.boton__america{
-    margin-left: 36%;
 }
 .back{
 	display: flex;
 	flex-direction: column;
 	justify-items: center;
-    opacity: 70%;
+    opacity: 60%;
+    background-color: $verde_apps;
     backface-visibility: hidden;
     transition-property: transform;
     transition-duration: 800ms;
     transition-timing-function: linear;
     transform: rotateY(180deg);
-    h4{
+    width: 341px;
+    height: 306px;
+    h3{
         position: relative;
-        top:10%;
+        top: 3%;
         padding: 30px;
         font-weight:bold;
         text-align: center;
     }
     li{
         position: relative;
-        top:30%;
         text-align: center;
+        list-style:none;
     }
 }
 .front{ 
@@ -94,7 +66,6 @@
     transition-property: transform;
     transition-duration: 800ms;
     transition-timing-function: linear;
-    position: absolute;
 }
 .lagos:hover .front{
             transform: rotateY(-180deg);
@@ -128,31 +99,49 @@
     transform: rotateY(0deg);
     cursor: pointer;
 }
+.cerveza:hover .front{
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+.cerveza:hover .back{
+    transform: rotateY(0deg);
+    cursor: pointer;
+}
+.playas:hover .front{
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+.playas:hover .back{
+    transform: rotateY(0deg);
+    cursor: pointer;
+}
 /*--RESPONSIVE--*/
-/*--Celular--*/
+/*--CELULAR--*/
 @media (min-width:240px) and (max-width:480px) {
     .grid__bariloche{
         display: grid;
-        grid-template-areas:"imagen_bariloche"
-                            "lagos"
-                            "cerros"
-                            "hoteles"
-                            "comidas";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         margin: 3%;
-        padding-bottom: 1%;      
+        padding-bottom: 1%;
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
 }
 
-/*--Tablet--*/
+/*--TABLET--*/
 @media (min-width: 481px) and (max-width: 991px) {
     .grid__bariloche{
         display: grid;
-        grid-template-areas:"imagen_bariloche"
-                            "lagos"
-                            "cerros"
-                            "hoteles"
-                            "comidas";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         margin: 3%;
         padding-bottom: 1%;
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
 }

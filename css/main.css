@@ -463,10 +463,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
+  margin-bottom: 2%;
 }
 
 #bariloche article {
-  background-color: #BBBBBB;
+  background-color: red;
+  width: auto;
 }
 
 #bariloche article p {
@@ -476,78 +478,31 @@
 
 #bariloche article h2 {
   text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .grid__bariloche {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "imagen_bariloche lagos hoteles" "imagen_bariloche cerros comidas";
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 1.1rem;
-  margin: 3%;
-  padding-bottom: 1%;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-column-gap: 1.3rem;
+  grid-row-gap: 1.3rem;
+  margin-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
-.grid__bariloche h4 {
+.grid__bariloche h3 {
   text-align: center;
   font-weight: bold;
 }
 
-.imagen_bariloche {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: imagen_bariloche;
-  padding: 2%;
-  border-radius: 30px;
-}
-
-.imagen_bariloche img {
-  border-radius: 30px;
-}
-
-.lagos {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: lagos;
-  padding: 2%;
-  background-color: #e1e1db;
-  border-radius: 30px;
-  list-style-position: inside;
-}
-
-.comidas {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: comidas;
-  padding: 2%;
-  background-color: #e1e1db;
-  border-radius: 30px;
-  list-style-position: inside;
-}
-
-.hoteles {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: hoteles;
-  padding: 2%;
-  background-color: #e1e1db;
-  border-radius: 30px;
-  list-style-position: inside;
-}
-
-.cerros {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: cerros;
-  padding: 2%;
-  background-color: #e1e1db;
-  border-radius: 30px;
-  list-style-position: inside;
-}
-
-.boton__america {
-  margin-left: 36%;
+.grid__bariloche img {
+  position: absolute;
 }
 
 .back {
@@ -559,7 +514,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   justify-items: center;
-  opacity: 70%;
+  opacity: 60%;
+  background-color: #e1e1db;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transition-property: -webkit-transform;
@@ -572,11 +528,13 @@
           transition-timing-function: linear;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  width: 341px;
+  height: 306px;
 }
 
-.back h4 {
+.back h3 {
   position: relative;
-  top: 10%;
+  top: 3%;
   padding: 30px;
   font-weight: bold;
   text-align: center;
@@ -584,8 +542,8 @@
 
 .back li {
   position: relative;
-  top: 30%;
   text-align: center;
+  list-style: none;
 }
 
 .front {
@@ -599,7 +557,6 @@
           transition-duration: 800ms;
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
-  position: absolute;
 }
 
 .lagos:hover .front {
@@ -650,26 +607,64 @@
   cursor: pointer;
 }
 
+.cerveza:hover .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  cursor: pointer;
+}
+
+.cerveza:hover .back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  cursor: pointer;
+}
+
+.playas:hover .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  cursor: pointer;
+}
+
+.playas:hover .back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  cursor: pointer;
+}
+
 /*--RESPONSIVE--*/
-/*--Celular--*/
+/*--CELULAR--*/
 @media (min-width: 240px) and (max-width: 480px) {
   .grid__bariloche {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "imagen_bariloche" "lagos" "cerros" "hoteles" "comidas";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 3%;
     padding-bottom: 1%;
   }
+  .grid__bariloche img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-/*--Tablet--*/
+/*--TABLET--*/
 @media (min-width: 481px) and (max-width: 991px) {
   .grid__bariloche {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "imagen_bariloche" "lagos" "cerros" "hoteles" "comidas";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     margin: 3%;
     padding-bottom: 1%;
+  }
+  .grid__bariloche img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -997,7 +992,9 @@ header {
         justify-self: center;
     text-align: center;
     margin: 0%;
+    padding: 4%;
     padding-top: 6%;
+    width: 65%;
   }
   .sociales {
     -ms-grid-column-align: center;
@@ -1016,23 +1013,8 @@ header {
   .logo_a {
     display: none;
   }
-  .grid__footer {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .copy {
-    -ms-grid-column-align: center;
-        justify-self: center;
-    margin: 0%;
-    padding-top: 2%;
-  }
   .sociales {
-    -ms-grid-column-align: center;
-        justify-self: center;
-    margin-bottom: 2%;
-    margin-right: 0%;
+    width: 22%;
   }
   .sociales__lg {
     display: none;
