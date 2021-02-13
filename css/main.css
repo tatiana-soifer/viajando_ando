@@ -497,7 +497,7 @@
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  grid-column-gap: 1.3rem;
+  grid-gap: 1.3rem;
   grid-row-gap: 1.3rem;
   margin-bottom: 2%;
   padding-left: 2%;
@@ -651,6 +651,7 @@
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 3%;
     padding-bottom: 1%;
+    grid-roow-gap: 5%;
   }
   .grid__bariloche img {
     width: 100%;
@@ -865,28 +866,19 @@
   display: none;
 }
 
+.lightbox h4 {
+  color: white;
+  text-align: center;
+  margin-top: 15%;
+}
+
 .lightbox:target {
-  position: fixed;
+  display: block;
   background: rgba 0, 0, 0, 0.8;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.lightbox:target h4 {
-  color: white;
-  text-align: center;
-  margin: 2% 0%;
-}
-
-.lightbox:target a {
-  color: white;
-  font-size: 40px;
-  text-decoration: none;
-  margin: 0 10px;
-  -ms-flex-negative: 2;
-      flex-shrink: 2;
 }
 
 .israel__img {
@@ -905,6 +897,20 @@
 
 .israel__img img {
   width: 100%;
+  height: 100%;
+}
+
+.israel__img a {
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.israel__img a:nth-child(2) {
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+  margin: 0;
   height: 100%;
 }
 
@@ -942,7 +948,7 @@
             align-items: center;
   }
   .h3 {
-    width: 300px;
+    width: 100%;
     height: auto;
   }
 }
@@ -963,7 +969,7 @@
             align-items: center;
   }
   .h3 img {
-    width: 350px;
+    width: 100%;
     height: auto;
   }
 }

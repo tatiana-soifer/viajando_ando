@@ -22,7 +22,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 1.3rem;
+    grid-gap: 1.3rem;
     grid-row-gap: 1.3rem;    
     margin-bottom: 2%;
     padding-left: 2%;
@@ -124,6 +124,7 @@
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         margin: 3%;
         padding-bottom: 1%;
+        grid-roow-gap: 5%;
         img{
             width: 100%;
             height: auto;
