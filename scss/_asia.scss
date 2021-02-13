@@ -54,28 +54,24 @@
 }
 .lightbox{
     display: none;
-    position: absolute;
-    background-color: black;
+    position: fixed;
+    background: rgba(0, 0, 0,0.7);
+    z-index: 1045;
     h4{
         color: white;
-        opacity: 1;
         text-align: center;
         margin-top: 15%;
     }
     &:target{
-        opacity: 0.8;
         display: block;
-        top: 0;
         left: 0;
         bottom: 0;
         width: 100%;
-        height: 148%;
     }
 }
 .israel__img{
     width: 100%;
     height: auto;
-    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
