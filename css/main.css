@@ -841,8 +841,8 @@
 .h_2 img {
   width: 195px;
   height: 250px;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-          box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #black;
+          box-shadow: 3px 3px 5px 6px #black;
 }
 
 .h_3 {
@@ -962,7 +962,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .h3 {
+  .h3 img {
     width: 350px;
     height: auto;
   }

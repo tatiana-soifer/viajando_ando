@@ -42,7 +42,7 @@
     img{
         width: 195px;
         height: 250px;
-        box-shadow: 3px 3px 5px 6px #ccc;
+        box-shadow: 3px 3px 5px 6px #black;
     }
 }
 .h_3{
@@ -142,7 +142,9 @@
         }   
     }
     .h3{
-        width: 350px;
-        height: auto;
+        img{
+            width: 350px;
+            height: auto;
+        }
     }
 }
