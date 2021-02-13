@@ -125,8 +125,14 @@
         padding-bottom: 1%;
         grid-row-gap: 1%;
     }
-    h2{
-        margin-bottom: 5%!important;
+    #bariloche{
+        article{
+            h2{
+                margin-bottom: 6%;
+                margin-left: 1%;
+                margin-right: 1%;
+            }
+        }
     }
     .front{
         img{
@@ -135,7 +141,6 @@
         }
     }
 }
-
 
 /*--TABLET--*/
 @media (min-width: 481px) and (max-width: 991px) {
