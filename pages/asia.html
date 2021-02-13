@@ -7,7 +7,7 @@
         <!--RESPONSIVE-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--BOOTSTRAP-->
-    <link  rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/bootstrap.min.js"></script>
         <!--TIPOGRAFIAS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -80,31 +80,85 @@
     <article>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-12 col-12">
+                <div class="col-lg-5 col-md-6 col-sm-12 col-12">
                     <h2 class="text-uppercase">Israel</h2>
                     <h3>Datos curiosos que seguro no sabes</h3>
-                    <p></p>
                     <ul>
-                        <li>Entrar con zapatos a las casas.</li>
-                        <li>Usar ropa descubierta en público.</li>
-                        <li>Comer cerdo.</li>
-                        <li>Besar a tu pareja en público.</li>
-                        <li>Escuchar música con volumen fuerte en la calle.</li>
-                        <li>Hacer chistes con la religión.</li>
-                        <li>Estornudar en la mesa.</li>
-                        <li>Devolver un tupper de comida vacío.</li>
-                        <li>Agredir a los animales callejeros.</li>
+                        <li>Es el único país que ha revivido un idioma muerto, haciendo del hebreo uno de sus dos idiomas oficiales.</li>
+                        <li>Vestimenta formal significa una camiseta limpia, jeans y sandalias (así llegan muchos invitados a las bodas).</li>
+                        <li>Tiene la tercera tasa más alta de iniciativa empresarial en el mundo.</li>
+                        <li>Se puede atravesar en auto, de norte a sur en 6 horas.</li>
+                        <li>9 de cada 10 hogares usan energía solar para calentar agua.</li>
+                        <li>En relación con su población, es la nación que absorbe la mayor cantidad inmigrantes en la tierra.</li>
+                        <li>Los soldados y los emprendedores son los personajes más amados del país.</li>
+                        <li>Es el único país en el que el servicio militar es obligatorio para hombres y mujeres.</li>
+                        <li>Fue el primer país en prohibir modelos con bajo peso para combatir la anorexia.</li>
                     </ul>
-                </>
-                <div class="col-md-4 col-sm-12">
-                    <img src="../img/turquia_a.png" alt="Turquía" id="shadow" >
+                </div>
+                    <!--GRID DE LAS FOTOS CHICAS-->
+                <div class="israel__grid">
+                    <div class="vertical" id="shadow">
+                        <a href="#israel_d">
+                            <img src="../img/israel_d.jpg" alt="israel">
+                        </a>
+                    </div>
+                    <div class="h_1" id="shadow">
+                        <a href="#israel_a">
+                            <img src="../img/israel_c.jpg" alt="israel">
+                        </a>
+                    </div>
+                    <div class="h_2" id="shadow">
+                        <a href="#israel_b">
+                            <img src="../img/israel_b.jpg" alt="israel">
+                        </a>
+                    </div>
+                    <div class="h_3" id="shadow">
+                        <a href="#israel_c">
+                            <img src="../img/israel_a.jpg" alt="israel">
+                        </a>
+                    </div>
+                </div>
+                    <!--AMPLIACION DE LAS FOTOS CON EL EFEXTO LIGHTBOX-->
+                <div class="lightbox" id="israel_a">
+                    <h4>Jerusalem</h4>
+                    <div class="israel__img">
+                        <a class="boton_next" href="#israel_d">&#60;</a>
+                        <a href="#israel_b"><img src="../img/israel_a.jpg" alt="israel"></a>
+                        <a class="boton_next" href="#israel_b">></a>
+                    </div>
+                    <a href="" class="cerrar">X</a>
+                </div>
+                <div class="lightbox" id="israel_b">
+                    <h4>Desierto Neguev</h4>
+                    <div class="israel__img">
+                        <a class="boton_next" href="#israel_a">&#60;</a>
+                        <a href="#israel_c"><img src="../img/israel_b.jpg" alt="israel"></a>
+                        <a class="boton_next" href="#israel_c">></a>
+                    </div>
+                    <a href="" class="cerrar">X</a>
+                </div>
+                <div class="lightbox" id="israel_c">
+                    <h4>Tel Aviv</h4>
+                    <div class="israel__img">
+                        <a class="boton_next" href="#israel_b">&#60;</a>
+                        <a href="#israel_d"><img src="../img/israel_c.jpg" alt="israel"></a>
+                        <a class="boton_next" href="israel_d">></a>
+                    </div>
+                    <a href="" class="cerrar">X</a>
+                </div>
+                <div class="lightbox" id="israel_d">
+                    <h4>Muro de los Lamentos</h4>
+                    <div class="israel__img">
+                        <a class="boton_next" href="#israel_c">&#60;</a>
+                        <a href="#israel_a"><img src="../img/israel_d.jpg" alt="israel"></a>
+                        <a class="boton_next" href="#israel_a">></a>
+                    </div>
+                    <a href="" class="cerrar">X</a>
                 </div>
             </div>
         </div>
     </article>
 </section>
-<br>
-<br>
 
     <!--FOOTER-->
 <footer>

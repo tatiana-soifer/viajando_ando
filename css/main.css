@@ -781,30 +781,161 @@
 }
 
 /*--ARTICULO TURQUIA--*/
-#turquia {
+#israel article {
+  background-color: #BBBBBB;
+  margin: 5%;
+  padding: 2%;
+}
+
+#israel p {
+  text-align: justify;
+  list-style-position: inside;
+}
+
+.israel__grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "vertical h_1 h_2" "vertical h_3 h_3";
+  grid-gap: 1%;
+}
+
+.vertical {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: vertical;
+}
+
+.vertical img {
+  width: 250px;
+  height: 500px;
+}
+
+.h_1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: h_1;
+}
+
+.h_1 img {
+  width: 195px;
+  height: 250px;
+}
+
+.h_2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: h_2;
+}
+
+.h_2 img {
+  width: 195px;
+  height: 250px;
+}
+
+.h_3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: h_3;
+}
+
+.h_3 img {
+  width: 400px;
+  height: 245px;
+}
+
+.lightbox {
+  display: none;
+}
+
+.lightbox:target {
+  position: fixed;
+  background: rgba 0, 0, 0, 0.8;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lightbox:target h4 {
+  color: white;
+  text-align: center;
+  margin: 2% 0%;
+}
+
+.lightbox:target a {
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  margin: 0 10px;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+}
+
+.israel__img {
+  width: 100%;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#turquia article {
-  background-color: #BBBBBB;
-  margin-bottom: 1%;
-  list-style-position: inside;
+.israel__img img {
+  width: 100%;
+  height: 100%;
 }
 
-#turquia article p {
-  margin: 2%;
-  text-align: justify;
+.cerrar {
+  display: block;
+  line-height: 25px;
+  position: absolute;
+  font-size: 20px;
+  top: 60px;
+  right: 60px;
+  background: black;
+  border-radius: 50%;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+  text-decoration: none;
+  text-align: center;
+  margin: 15px auto;
 }
 
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .israel__grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "h_1" "h_2" "h_3" "vertical";
+  }
+}
+
 /*--TABLET--*/
-/*--ESCRITORIO--*/
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .israel__grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "h_1" "h_2" "h_3" "vertical";
+  }
+}
+
 /*--BODY--*/
 * {
   -webkit-box-sizing: border-box;
