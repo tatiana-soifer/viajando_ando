@@ -363,6 +363,9 @@
     -webkit-filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.24));
             filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.24));
   }
+  #sudafrica .carrusel {
+    margin-top: 2%;
+  }
 }
 
 /*--ARTICULO NYC--*/
@@ -881,7 +884,7 @@
 .lightbox h4 {
   color: white;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 3%;
 }
 
 .lightbox:target {
@@ -945,6 +948,7 @@
     display: -ms-grid;
     display: grid;
         grid-template-areas: "h_1" "h_2" "h_3" "vertical";
+    grid-gap: 0;
   }
   .israel__grid img {
     -webkit-box-pack: center;
@@ -953,9 +957,18 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 3%;
   }
   .h3 {
     width: 100%;
+    height: auto;
+  }
+  .h_3 img {
+    width: 96%;
+    height: auto;
+  }
+  .lightbox:target {
+    width: 90%;
     height: auto;
   }
 }

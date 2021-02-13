@@ -71,7 +71,10 @@
     }
     #sudafrica{
         article{
-        filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.24));
+            filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.24));
+        }
+        .carrusel{
+            margin-top: 2%;
         }
     }
 }

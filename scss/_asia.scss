@@ -60,7 +60,7 @@
     h4{
         color: white;
         text-align: center;
-        margin-top: 15%;
+        margin-top: 3%;
     }
     &:target{
         display: block;
@@ -114,13 +114,25 @@
                                 "h_2"
                                 "h_3"
                                 "vertical";
+        grid-gap: 0;
         img{
             justify-content: center;
             align-items: center;
+            margin-bottom: 3%;
         }
     }
     .h3{
         width: 100%;
+        height: auto;
+    }
+    .h_3{
+        img{
+        width: 96%;
+        height: auto;
+        }
+    }
+    .lightbox:target{
+        width: 90%;
         height: auto;
     }
 }
