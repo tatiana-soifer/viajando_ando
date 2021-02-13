@@ -868,16 +868,17 @@
   display: none;
   position: absolute;
   background-color: black;
-  opacity: 0.8;
 }
 
 .lightbox h4 {
   color: white;
+  opacity: 1;
   text-align: center;
   margin-top: 15%;
 }
 
 .lightbox:target {
+  opacity: 0.8;
   display: block;
   top: 0;
   left: 0;
@@ -904,7 +905,6 @@
 .israel__img img {
   width: 100%;
   height: auto;
-  opacity: 1;
 }
 
 .israel__img a {
@@ -961,7 +961,7 @@
   .israel__grid {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "h_1" "h_2" "h_3" "vertical";
+        grid-template-areas: "h_1 h_2" "h_3" "vertical";
   }
   .israel__grid img {
     -webkit-box-pack: center;

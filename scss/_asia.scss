@@ -56,13 +56,14 @@
     display: none;
     position: absolute;
     background-color: black;
-    opacity: 0.8;
     h4{
         color: white;
+        opacity: 1;
         text-align: center;
         margin-top: 15%;
     }
     &:target{
+        opacity: 0.8;
         display: block;
         top: 0;
         left: 0;
@@ -81,7 +82,6 @@
     img{
         width: 100%;
         height: auto;
-        opacity: 1;
     }
     a{
         color: white;
@@ -132,8 +132,7 @@
 @media screen and (min-width: 481px) and (max-width: 991px) {
     .israel__grid{
         display: grid;
-        grid-template-areas:    "h_1"
-                                "h_2"
+        grid-template-areas:    "h_1 h_2"
                                 "h_3"
                                 "vertical";
         img{
