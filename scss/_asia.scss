@@ -23,6 +23,7 @@
     img{
         width: 250px;
         height: 500px;
+        box-shadow: 3px 3px 5px 6px #ccc;
     }
 }
 .h_1{
@@ -31,6 +32,7 @@
     img{
         width: 195px;
         height: 250px;
+        box-shadow: 3px 3px 5px 6px #ccc;
     }
 }
 
@@ -40,6 +42,7 @@
     img{
         width: 195px;
         height: 250px;
+        box-shadow: 3px 3px 5px 6px #ccc;
     }
 }
 .h_3{
@@ -48,6 +51,7 @@
     img{
         width: 400px;
         height: 245px;
+        box-shadow: 3px 3px 5px 6px #ccc;
     }
 }
 
@@ -114,6 +118,10 @@
                             "h_3"
                             "vertical";
     }
+    .h3{
+        width: 350px;
+        height: auto;
+    }
 }
 
 /*--TABLET--*/
@@ -124,5 +132,9 @@
                             "h_2"
                             "h_3"
                             "vertical";
+    }
+    .h3{
+        width: 350px;
+        height: auto;
     }
 }
