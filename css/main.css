@@ -192,6 +192,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 90%;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -226,7 +228,7 @@
   .nosotros p {
     font-size: 0.9rem;
   }
-  .nosotros__lg {
+  .nosotros .nosotros__lg {
     display: none;
   }
 }
@@ -257,7 +259,7 @@
   .nosotros p {
     font-size: 0.9rem;
   }
-  .nosotros__lg {
+  .nosotros__sm {
     display: none;
   }
 }
@@ -429,7 +431,6 @@
 }
 
 .card-img-overlay {
-  top: auto;
   bottom: 46%;
   margin-bottom: 0%;
 }

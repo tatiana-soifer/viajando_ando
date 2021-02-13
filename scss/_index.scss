@@ -147,6 +147,8 @@
     }
     img{
         display: flex;
+        width: 90%;
+        height: auto;
         border-radius: 10px;
     }
 }
@@ -186,13 +188,13 @@
             font-size: 25px;
             margin-top: 10%;
         }
-        p{
-            font-size: 0.9rem;
-        }
+    p{
+    font-size: 0.9rem;
     }
     .nosotros__lg{
         display: none;
     }
+}
 }
 
 /*--TABLET--*/
@@ -225,7 +227,7 @@
             font-size: 0.9rem;
         }
     }
-    .nosotros__lg{
+    .nosotros__sm{
         display: none;
     }
 }
