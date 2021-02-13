@@ -933,8 +933,16 @@
     display: grid;
         grid-template-areas: "h_1" "h_2" "h_3" "vertical";
   }
+  .israel__grid img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .h3 {
-    width: 350px;
+    width: 300px;
     height: auto;
   }
 }
@@ -945,6 +953,14 @@
     display: -ms-grid;
     display: grid;
         grid-template-areas: "h_1" "h_2" "h_3" "vertical";
+  }
+  .israel__grid img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .h3 {
     width: 350px;

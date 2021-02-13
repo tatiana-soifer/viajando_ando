@@ -111,27 +111,35 @@
 /*--RESPONSIVE--*/
 /*--CELULAR--*/
 @media screen and (min-width:240px) and (max-width:480px) {
-.israel__grid{
-    display: grid;
-    grid-template-areas:    "h_1"
-                            "h_2"
-                            "h_3"
-                            "vertical";
+    .israel__grid{
+        display: grid;
+        grid-template-areas:    "h_1"
+                                "h_2"
+                                "h_3"
+                                "vertical";
+        img{
+            justify-content: center;
+            align-items: center;
+        }
     }
     .h3{
-        width: 350px;
+        width: 300px;
         height: auto;
     }
 }
 
 /*--TABLET--*/
 @media screen and (min-width: 481px) and (max-width: 991px) {
-.israel__grid{
-    display: grid;
-    grid-template-areas:    "h_1"
-                            "h_2"
-                            "h_3"
-                            "vertical";
+    .israel__grid{
+        display: grid;
+        grid-template-areas:    "h_1"
+                                "h_2"
+                                "h_3"
+                                "vertical";
+        img{
+            justify-content: center;
+            align-items: center;
+        }   
     }
     .h3{
         width: 350px;
